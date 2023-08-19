@@ -1,3 +1,4 @@
+import { Box } from '@chakra-ui/react'
 import React, { Component } from 'react'
 
 type Props = {}
@@ -9,7 +10,9 @@ class Home extends Component<Props, State> {
 
   render() {
     return (
-      <div>Home</div>
+      <Box m={2}>
+      <div className='bg-red-900 '>Home</div>
+      </Box>
     )
   }
 }
