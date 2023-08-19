@@ -1,6 +1,7 @@
-import { AvatarBadge, Badge, Button, Link } from '@chakra-ui/react'
+import { AvatarBadge, Badge, Button, ButtonGroup, Input, Link } from '@chakra-ui/react'
 import React, { Component } from 'react'
 import * as Lu from 'react-icons/lu'
+import * as Li from 'react-icons/lia'
 type Props = {}
 
 type State = {}
@@ -10,41 +11,57 @@ class NavBar extends Component<Props, State> {
 
   render() {
     return (
-      <div className=' flex flex-row lg:pl-[15%] bg-[#5d6e70]'>
-        
-        <div className='flex text-white flex-row text-2xl font-bold mx-2 py-5'>
-            <Link>Shop.com</Link>
-        </div>
+        <div>
+            <nav className=' bg-[#fed700]'>
+                <div className="mx-[10%] flex flex-row justify-between items-center py-3 space-x-4">
+                    <div className='font-bold text-2xl'>Shop.com</div>
 
-        <div className=' bg-[#525252]'>
-            <ul className='flex flex-row space-x-3 text-lg  bg-[#525252] text-white  '>
-                <li className="px-5  ">
-                    <div className='flex flex-row space-x-2 items-center py-5'>
-                        <Lu.LuSearch size={24}></Lu.LuSearch>
-                        <input type="text" className='bg-transparent w-[400px]' placeholder='search'/>
+                    {/* search area */}
+
+                    <div className='flex flex-row w-[70%] space-x-4'>
+                        <button>
+                            <Lu.LuMenu size={32} color='black'/>
+                            
+                        </button>
+                        <div className='flex flex-row items-center bg-white w-full rounded-r-full rounded-l-full '>
+                        {/*  */}
+                            <input  placeholder='search for products' className='py-3 w-full rounded-l-full px-6'/>
+                            <div className='bg-[#333e48] cursor-pointer h-full flex flex-row items-center px-4 rounded-r-full'>
+                                <Lu.LuSearch color='white' size={24}/>
+                            </div>
+                        </div>
                     </div>
-                </li>
-                <li className=" px-5  "><div className='cursor-pointer py-5'>Home</div> </li>
-                <li className=" px-5  "><div className='cursor-pointer py-5'>Links</div> </li>
-                <li className=" px-5  "><div className='cursor-pointer py-5'>Products</div> </li>
-                <li className=" px-5  "><div className='cursor-pointer py-5'>Contact US</div> </li>
-                <li className="  bg-[#5d6e70] ">
-                    <div className='px-10 cursor-pointer  py-5'>
-                        <Lu.LuUser size={24}></Lu.LuUser>
-                    </div>
-                </li>
-                <li className=" px-5"><div className='cursor-pointer flex-row flex w-[100px] py-5'>
+
+                    {/* cart and other  */}
+                    <div className='flex flex-row items-center space-x-6'>
+                        <button>
+                            <Li.LiaHeart size={26}/>
+                        </button>
                     
-                        <Lu.LuShoppingCart size={24}/>
-                        <Badge borderColor='papayawhip' bg='#a5a9a8'   boxSize='1.25em' ></Badge>
-                   </div> </li>
-                
-            </ul>
+                        <button className='flex flex-row items-end space-x-5'>
+                            <Li.LiaShoppingBagSolid size={26} className=" "/>
+                            <div className='font-semibold'>$1785.00</div>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+            <div className='flex-row flex items-center mx-[10%] py-2'>
+                <div className='w-[20%]'>
+                    All Departments
+                </div>
+                <div className='w-[80%] flex-row flex justify-between'>
+                    <ul className='flex flex-row items-center space-x-4 w-full'>
+                        <li>All</li>
+                        <li>New offers</li>
+                        <li>Best sell</li>
+                    </ul>
+                    <div className='w-[30%] flex flex-row justify-end'>
+                    Free Shipping on Orders $50+
+                    </div>
+                </div>
+            </div>
         </div>
-
-        
-
-      </div>
     )
   }
 }
