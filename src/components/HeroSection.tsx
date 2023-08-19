@@ -29,7 +29,7 @@ const HeroSection = (props: Props) => {
                                                         <sup className="">$</sup>749<sup className="">99</sup>
                                                     </div>
                                                 </div>
-                                                <Button bg={'#fed700'} data-scs-animation-in="fadeInUp" data-scs-animation-delay="400" px={16} py={4} fontWeight={'light'} >
+                                                <Button backgroundColor='#fed700' variant='solid' px={16} py={4} fontWeight={'light'} >
                                                     Start Buying
                                                 </Button>
                                             </div>
