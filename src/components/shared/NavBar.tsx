@@ -13,7 +13,7 @@ class NavBar extends Component<Props, State> {
     return (
         <div>
             <nav className=' bg-[#fed700]'>
-                <div className="mx-[10%] flex flex-row justify-between items-center py-3 space-x-4">
+                <div className="mx-[12%] flex flex-row justify-between items-center py-3 space-x-4">
                     <div className='font-bold text-2xl'>Shop.com</div>
 
                     {/* search area */}
@@ -46,18 +46,18 @@ class NavBar extends Component<Props, State> {
                 </div>
             </nav>
 
-            <div className='flex-row flex items-center mx-[10%] py-2'>
+            <div className='flex-row flex items-center px-[12%] text-md shadow-b-500/50 shadow py-3'>
                 <div className='w-[20%]'>
-                    All Departments
+                   <button className='font-bold'>All Departments</button> 
                 </div>
                 <div className='w-[80%] flex-row flex justify-between'>
-                    <ul className='flex flex-row items-center space-x-4 w-full'>
-                        <li>All</li>
-                        <li>New offers</li>
-                        <li>Best sell</li>
+                    <ul className='flex flex-row items-center space-x-10 w-full font-extralight'>
+                        <li className='text-red-500 cursor-pointer'>Super Deals</li>
+                        <li className='cursor-pointer'>New offers</li>
+                        <li className='cursor-pointer'>Best sell</li>
                     </ul>
                     <div className='w-[30%] flex flex-row justify-end'>
-                    Free Shipping on Orders $50+
+                        <span className='cursor-pointer font-light'> Free Shipping on Orders $50+</span>
                     </div>
                 </div>
             </div>
