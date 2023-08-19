@@ -1,5 +1,7 @@
 import { Box } from '@chakra-ui/react'
 import React, { Component } from 'react'
+import NavBar from '../../components/shared/NavBar'
+import HeroSection from '../../components/HeroSection'
 
 type Props = {}
 
@@ -10,9 +12,10 @@ class Home extends Component<Props, State> {
 
   render() {
     return (
-      <Box m={2}>
-      <div className='bg-red-900 '>Home</div>
-      </Box>
+     <>
+      <NavBar/>
+      <HeroSection/>
+</>
     )
   }
 }
