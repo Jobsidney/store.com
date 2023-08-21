@@ -7,10 +7,10 @@ const ProductCard = (props: Props) => {
     <div className="w-full border-r  border-black/20 hover:border-transparent  hover:shadow-2xl lg:px-4 p-3">
         <div className=" ">
             <div className="mb-2">
-                <a href="../shop/product-categories-7-column-full-width.html" className="font-size-12 text-gray-5">Speakers</a>
+                <a href="../shop/product-categories-7-column-full-width.html" className="text-[15px] text-gray-600 font-thin">Speakers</a>
             </div>
-            <h5 className="mb-1 product-item__title">
-                <a href="../shop/single-product-fullwidth.html" className="text-blue-600 font-bold">Wireless Audio System Multiroom 360 degree Full base audio</a>
+            <h5 className="mb-1 text-ellipsis h-[20px]">
+                <a href="../shop/single-product-fullwidth.html" className="text-blue-600 font-bold text-ellipsis">Wireless Audio System Multiroom 360 degree Full base audio</a>
                 </h5>
             <div className="mb-2">
                 <a href="../shop/single-product-fullwidth.html" className="d-block text-center">
