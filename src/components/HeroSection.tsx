@@ -8,7 +8,7 @@ import HeroThumbNailCard from './shared/HeroThumbNailCard'
 type Props = {}
 
 const HeroSection = (props: Props) => {
-    const [isLoaded,setLoaded] = useState<any>(false);
+    const [isLoaded,setLoaded] = useState<any>(true);
     return (
         <div className='px-[12%] py-6'>
           <Box   bg='white'>
