@@ -4,7 +4,7 @@ type Props = {}
 
 function ProductCardSolid({}: Props) {
   return (
-    <div className="  bg-white hover:border-transparent  w-[270px]  hover:shadow-xl lg:px-4 p-3">
+    <div className="  bg-white hover:border-transparent  w-[270px] min-w-[270px]  hover:shadow-2xl lg:px-4 p-3">
         <div className=" bg-white">
             <div className="mb-2">
                 <a href="../shop/product-categories-7-column-full-width.html" className="text-[15px] text-gray-600 font-thin">Speakers</a>
