@@ -4,6 +4,7 @@ import NavBar from '../../components/shared/NavBar'
 import HeroSection from '../../components/HeroSection'
 import FeaturedSales from '../../components/FeaturedSales'
 import WeeklyDeals from '../../components/shared/WeeklyDeals'
+import CategoryGroupedItems from '../../components/shared/CategoryGroupedItems'
 
 type Props = {}
 
@@ -15,6 +16,7 @@ const Home = (props: Props) => {
       <HeroSection/>
       <FeaturedSales />
       <WeeklyDeals/>
+      <CategoryGroupedItems/>
     </>
     
   )
