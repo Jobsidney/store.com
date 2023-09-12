@@ -52,7 +52,7 @@ function CategoryGroupedItems({}: Props) {
                         <div className="pl-0 ">
                            
                             <div className="space-y-1" id="Bpills-tabContent">
-                                <div className="tab-pane fade pt-2 active show" >
+                                <div className=" pt-2 active show" >
                                     <ul className="flex flex-row mb-0  space-x-2">
                                  
                                         <ProductCard/>
