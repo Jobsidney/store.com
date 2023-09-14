@@ -4,7 +4,7 @@ type Props = {}
 
 const ProductCard = (props: Props) => {
   return (
-    <div className="w-full border-r  border-black/20 hover:border-transparent  hover:shadow-2xl lg:px-4 p-3">
+    <div className="w-full border-r  border-black/10 hover:border-transparent  hover:shadow-2xl lg:px-4 p-3">
         <div className=" ">
             <div className="mb-2">
                 <a href="../shop/product-categories-7-column-full-width.html" className="text-[15px] text-gray-600 font-thin">Speakers</a>
