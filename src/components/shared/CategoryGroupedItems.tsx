@@ -1,5 +1,7 @@
 import React from 'react'
 import ProductCard from './ProductCard'
+import BigCard1 from './BigCard1'
+import BigCard2 from './BigCard2'
 
 type Props = {}
 
@@ -35,22 +37,19 @@ function CategoryGroupedItems({}: Props) {
                     <div className="flex flex-row space-x-6">
                         <div className="">
                             <div className="min-w-[200px] ">
-                                <ul className="flex flex-col  mb-3">
-                                    <li className="border-b-2 py-2 text-[#333e48] hover:text-[black] hover:font-bold"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Featured Phones</a></li>
-                                    <li className="border-b-2 py-2 text-[#333e48] hover:text-[black] hover:font-bold"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Mobile Phones</a></li>
-                                    <li className="border-b-2 py-2 text-[#333e48] hover:text-[black] hover:font-bold"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Unlocked Phone</a></li>
-                                    <li className="border-b-2 py-2 text-[#333e48] hover:text-[black] hover:font-bold"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">4G LTE Smartphone</a></li>
-                                    <li className="border-b-2 py-2 text-[#333e48] hover:text-[black] hover:font-bold"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Tablet PCs</a></li>
-                                    <li className="border-b-2 py-2 text-[#333e48] hover:text-[black] hover:font-bold"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Tablet Accessories</a></li>
-                                    <li className="border-b-2 py-2 text-[#333e48] hover:text-[black] hover:font-bold"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Featured Tablets</a></li>
-                                    <li className="border-b-2 py-2 text-[#333e48] hover:text-[black] hover:font-bold"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Mobiles Accesories</a></li>
+                                <ul className="flex flex-col  mb-3 pt-8 divide-y-2 ">
+                                    <li className=" py-2 text-[#333e48] hover:text-[black] hover:font-bold"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Featured Phones</a></li>
+                                    <li className=" py-2 text-[#333e48] hover:text-[black] hover:font-bold"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Mobile Phones</a></li>
+                                    <li className=" py-2 text-[#333e48] hover:text-[black] hover:font-bold"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Unlocked Phone</a></li>
+                                    <li className=" py-2 text-[#333e48] hover:text-[black] hover:font-bold"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">4G LTE Smartphone</a></li>
+                                    <li className=" py-2 text-[#333e48] hover:text-[black] hover:font-bold"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Tablet PCs</a></li>
+                                    <li className=" py-2 text-[#333e48] hover:text-[black] hover:font-bold"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Tablet Accessories</a></li>
+                                    <li className=" py-2 text-[#333e48] hover:text-[black] hover:font-bold"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Featured Tablets</a></li>
+                                    <li className=" py-2 text-[#333e48] hover:text-[black] hover:font-bold"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Mobiles Accesories</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="min-w-[25%]">
-                            <a href="../shop/shop.html" className=" ">
-                                <img className=" h-[700px] border hover:border  hover:shadow-lg" src="https://transvelo.github.io/electro-html/2.0/assets/img/360X616/img1.jpg" alt="Image Description"/></a>
-                        </div>
+                        <BigCard2/>
                         <div className="">
                            
                             <div className="space-y-4 pt-4" >
