@@ -5,13 +5,15 @@ type Props = {}
 
 function CategoryGroupedItems({}: Props) {
   return (
-    <div className="container">
               
-                <div className="mb-6  px-[12%] py-24 w-screen">
+                <div className="mb-6  px-[12%] py-24 w-[100vw]">
                  
-                    <div className="position-relative text-center z-index-2">
-                        <div className="flex flex-row justify-between border-b border-color-1 md:border-y-0 ">
-                            <h3 className="section-title mb-0 pb-2 font-size-22">Smartphones &amp; Tablets</h3>
+                    <div className="">
+                        <div className="flex flex-row justify-between border-b-2  border-[#dedfe0] ">
+                            <div className=''>
+                            <h3 className=" mb-0 pb-2 text-2xl">Smartphones &amp; Tablets</h3>
+                            <div className='border-b-[3px] border-[#fed700] w-[114px]'></div>
+                            </div>
 
                             <ul className="mb-2 pt-3 lg:pt-0 items-center flex flex-row text-md ">
                                 <li className="nav-item flex-shrink-0 flex-lg-shrink-1">
@@ -30,18 +32,18 @@ function CategoryGroupedItems({}: Props) {
                         </div>
                     </div>
                   
-                    <div className="flex flex-row">
+                    <div className="flex flex-row space-x-6">
                         <div className="">
                             <div className="min-w-[200px] ">
-                                <ul className="list-group list-group-flush flex-nowrap flex-xl-wrap flex-row flex-xl-column overflow-auto overflow-xl-visble mb-3 mb-xl-0">
-                                    <li className="border-color-1 list-group-item border-lg-down-0 flex-shrink-0 flex-xl-shrink-1"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Featured Phones</a></li>
-                                    <li className="border-color-1 list-group-item border-lg-down-0 flex-shrink-0 flex-xl-shrink-1"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Mobile Phones</a></li>
-                                    <li className="border-color-1 list-group-item border-lg-down-0 flex-shrink-0 flex-xl-shrink-1"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Unlocked Phone</a></li>
-                                    <li className="border-color-1 list-group-item border-lg-down-0 flex-shrink-0 flex-xl-shrink-1"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">4G LTE Smartphone</a></li>
-                                    <li className="border-color-1 list-group-item border-lg-down-0 flex-shrink-0 flex-xl-shrink-1"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Tablet PCs</a></li>
-                                    <li className="border-color-1 list-group-item border-lg-down-0 flex-shrink-0 flex-xl-shrink-1"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Tablet Accessories</a></li>
-                                    <li className="border-color-1 list-group-item border-lg-down-0 flex-shrink-0 flex-xl-shrink-1"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Featured Tablets</a></li>
-                                    <li className="border-color-1 list-group-item border-lg-down-0 flex-shrink-0 flex-xl-shrink-1"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Mobiles Accesories</a></li>
+                                <ul className="flex flex-col  mb-3">
+                                    <li className="border-b-2 py-2 text-[#333e48] hover:text-[black] hover:font-bold"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Featured Phones</a></li>
+                                    <li className="border-b-2 py-2 text-[#333e48] hover:text-[black] hover:font-bold"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Mobile Phones</a></li>
+                                    <li className="border-b-2 py-2 text-[#333e48] hover:text-[black] hover:font-bold"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Unlocked Phone</a></li>
+                                    <li className="border-b-2 py-2 text-[#333e48] hover:text-[black] hover:font-bold"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">4G LTE Smartphone</a></li>
+                                    <li className="border-b-2 py-2 text-[#333e48] hover:text-[black] hover:font-bold"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Tablet PCs</a></li>
+                                    <li className="border-b-2 py-2 text-[#333e48] hover:text-[black] hover:font-bold"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Tablet Accessories</a></li>
+                                    <li className="border-b-2 py-2 text-[#333e48] hover:text-[black] hover:font-bold"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Featured Tablets</a></li>
+                                    <li className="border-b-2 py-2 text-[#333e48] hover:text-[black] hover:font-bold"><a className="hover-on-bold py-1 px-3 text-gray-90 d-block" href="../shop/product-categories-7-column-full-width.html">Mobiles Accesories</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -49,12 +51,13 @@ function CategoryGroupedItems({}: Props) {
                             <a href="../shop/shop.html" className=" ">
                                 <img className=" h-[700px] border hover:border  hover:shadow-lg" src="https://transvelo.github.io/electro-html/2.0/assets/img/360X616/img1.jpg" alt="Image Description"/></a>
                         </div>
-                        <div className="pl-0 ">
+                        <div className="">
                            
-                            <div className="space-y-1" id="Bpills-tabContent">
-                                <div className="pt-2 active show" >
+                            <div className="space-y-4 pt-4" >
+                                <div className=" " >
                                     <ul className="flex flex-row mb-0  space-x-2">
                                  
+                                       
                                         <ProductCard/>
                                         <ProductCard/>
                                         <ProductCard/>
@@ -63,9 +66,11 @@ function CategoryGroupedItems({}: Props) {
                                     </ul>
                                 </div>
                                
-                                <div className="tab-pane fade pt-2 active show" >
+                                <div className=" " >
                                     <ul className="flex flex-row mb-0 space-x-2">
                                  
+                                        
+                                    
                                         <ProductCard/>
                                         <ProductCard/>
                                         <ProductCard/>
@@ -78,10 +83,6 @@ function CategoryGroupedItems({}: Props) {
                         </div>
                     </div>
                 </div>
-         
-             
-             
-            </div>
   )
 }
 
