@@ -13,8 +13,8 @@ function CategoryGroupedItems({}: Props) {
                     <div className="">
                         <div className="flex flex-row justify-between border-b-2  border-[#dedfe0] ">
                             <div className=''>
-                            <h3 className=" mb-0 pb-2 text-2xl">Smartphones &amp; Tablets</h3>
-                            <div className='border-b-[3px] border-[#fed700] w-[114px]'></div>
+                                <h3 className=" mb-0 pb-2 text-2xl">Smartphones &amp; Tablets</h3>
+                                <div className='border-b-[3px] border-[#fed700] w-[114px]'></div>
                             </div>
 
                             <ul className="mb-2 pt-3 lg:pt-0 items-center flex flex-row text-md ">
