@@ -19,35 +19,43 @@ function BigCard2({}: Props) {
                         <img className="w-full" src="https://transvelo.github.io/electro-html/2.0/assets/img/564X520/img2.jpg" alt="Image Description"/></a>
                    
                     <div className="flex flex-row mb-3 space-x-2">
-                        <div className=" w-[70px] border-2 relative">
-                       <a className="">
-                                <img className="" src="https://transvelo.github.io/electro-html/2.0/assets/img/564X520/img2.jpg" alt="Image Description"/>
-
-                               
-                            </a>
-                            <div className="items-center p-2 bg-[#fed700] rounded-full w-fit absolute top-[25%] left-[25%]" >
-                                <Md.MdAdd size={18} color='white'/>
-                            </div>
-                        </div>
-
-                        <div className=" w-[70px] border-2 relative">
+                    <div className="group w-[70px] border-2 relative cursor-pointer">
                           <a className="">
                                 <img className="" src="https://transvelo.github.io/electro-html/2.0/assets/img/564X520/img2.jpg" alt="Image Description"/>
 
                             </a>
-                            <div className="items-center p-2 bg-[#fed700] rounded-full w-fit absolute top-[25%] left-[25%]" >
-                                <Md.MdAdd size={18} color='white'/>
+                            <div className="invisible group-hover:visible items-center cursor-pointer flex-col flex justify-center  absolute top-0 left-0 right-0 bottom-0">
+                                <div className="  p-2 bg-[#fed700] rounded-full w-fit ">
+                                    <Md.MdAdd size={18} color='white'/>
+                                </div>
                             </div>
                                                          
                         </div>
 
-                        <div className=" w-[70px] border-2 relative">
-                           <a className="">
+                        <div className="group w-[70px] border-2 relative cursor-pointer">
+                          <a className="">
                                 <img className="" src="https://transvelo.github.io/electro-html/2.0/assets/img/564X520/img2.jpg" alt="Image Description"/>
+
                             </a>
-                            <div className="items-center p-2 hidden hover:block  bg-[#fed700] rounded-full w-fit absolute top-[25%] left-[25%]" >
-                                <Md.MdAdd size={22} color='white'/>
-                            </div>                         
+                            <div className="invisible group-hover:visible items-center cursor-pointer flex-col flex justify-center  absolute top-0 left-0 right-0 bottom-0">
+                                <div className="  p-2 bg-[#fed700] rounded-full w-fit ">
+                                    <Md.MdAdd size={18} color='white'/>
+                                </div>
+                            </div>
+                                                         
+                        </div>
+
+                        <div className="group w-[70px] border-2 relative cursor-pointer">
+                          <a className="">
+                                <img className="" src="https://transvelo.github.io/electro-html/2.0/assets/img/564X520/img2.jpg" alt="Image Description"/>
+
+                            </a>
+                            <div className="invisible group-hover:visible items-center cursor-pointer flex-col flex justify-center  absolute top-0 left-0 right-0 bottom-0">
+                                <div className="  p-2 bg-[#fed700] rounded-full w-fit ">
+                                    <Md.MdAdd size={18} color='white'/>
+                                </div>
+                            </div>
+                                                         
                         </div>
                         <div className="col"></div>
                     </div>
