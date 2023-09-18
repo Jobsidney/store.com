@@ -6,6 +6,7 @@ import FeaturedSales from '../../components/FeaturedSales'
 import WeeklyDeals from '../../components/shared/WeeklyDeals'
 import CategoryGroupedItems from '../../components/shared/CategoryGroupedItems'
 import TopCategoryWeek from '../../components/shared/TopCategoryWeek'
+import Footer from '../../components/shared/Footer'
 
 type Props = {}
 
@@ -19,6 +20,7 @@ const Home = (props: Props) => {
       <WeeklyDeals/>
       <CategoryGroupedItems/>
       <TopCategoryWeek/>
+      <Footer/>
     </>
     
   )
