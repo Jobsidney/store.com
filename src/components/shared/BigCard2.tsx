@@ -1,5 +1,6 @@
 import React from 'react'
 import * as Md from 'react-icons/md'
+import * as Bs from 'react-icons/bs'
 type Props = {}
 
 function BigCard2({}: Props) {
@@ -74,12 +75,13 @@ function BigCard2({}: Props) {
                     </div>
                 </div>
             </div>
-            {/* <div className="product-item__footer">
-                <div className="border-top pt-2 flex-center-between flex-wrap">
-                    <a href="../shop/compa-6 font-size-13"><i className="ec ec-compare mr-1 font-size-15"></i> Compare</a>
-                    <a href="../shop/wishlist.html" className="text-gray-6 font-size-13"><i className="ec ec-favorites mr-1 font-size-15"></i> Add to Wishlist</a>
-                </div>
-            </div> */}
+            <div className="product-item__footer">
+             
+                    <div className="hidden group-hover:block pt-2 flex-wrap">
+                        <a href="" className="text-gray-400 font-size-13 flex fex-row space-x-2 items-center hover:text-black "><Bs.BsHeart size={20} /> <span>Wishlist</span> </a>
+                    </div>
+           
+            </div>
         </div>
 
                                
