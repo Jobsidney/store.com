@@ -1,18 +1,18 @@
 import React from 'react'
-
+import * as Bi from 'react-icons/bi'
 type Props = {}
 
 function ViewCart({}: Props) {
   return (
-    <div className="container">
-                <div className="mb-4">
+    <div className="px-[15%] py-24 text-[#333e48]">
+                <div className="text-center text-5xl mb-12 ">
                     <h1 className="text-center">Cart</h1>
                 </div>
                 <div className="mb-10 cart-table">
                     <form className="mb-4" action="#" method="post">
-                        <table className="table" >
-                            <thead>
-                                <tr>
+                        <table className="text-[#747474]" >
+                            <thead className='border-b   text-[#747474]/80'>
+                                <tr className='font-extralight my-3'>
                                     <th className="product-remove">&nbsp;</th>
                                     <th className="product-thumbnail">&nbsp;</th>
                                     <th className="product-name">Product</th>
@@ -21,89 +21,98 @@ function ViewCart({}: Props) {
                                     <th className="product-subtotal">Total</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr className="">
-                                    <td className="text-center">
-                                        <a href="#" className="text-gray-32 font-size-26">×</a>
+                            <tbody className='border-spacing-4 '>
+                                <tr className="space-x-4 text-black/80  text-lg " style={{paddingTop: "10px"}}>
+                                    <td className="text-right px-8 text-3xl mt-4">
+                                        <a href="#" className=" text-[#333e48]/60 hover:text-black font-size-26">×</a>
                                     </td>
-                                    <td className="d-none d-md-table-cell">
-                                        <a href="#"><img className="img-fluid max-width-100 p-1 border border-color-1" src="../../assets/img/300X300/img6.jpg" alt="Image Description"/></a>
+                                    <td className="px-8 mt-4">
+                                        <div className='w-[100px]  border-2 border-black/20'>
+                                            <a href="#" >
+                                                <img className="" src="https://transvelo.github.io/electro-html/2.0/assets/img/300X300/img6.jpg" alt="Image Description"/></a>
+                                        </div>
                                     </td>
 
-                                    <td data-title="Product">
-                                        <a href="#" className="text-gray-90">Ultra Wireless S50 Headphones S50 with Bluetooth</a>
+                                    <td data-title="Product" className="px-8">
+                                        <a href="#" className="text-black/80 font-medium text-lg">Ultra Wireless S50 Headphones S50 with Bluetooth</a>
                                     </td>
 
-                                    <td data-title="Price">
+                                    <td data-title="Price" className="px-8  text-[#333e48]">
                                         <span className="">$1,100.00</span>
                                     </td>
 
-                                    <td data-title="Quantity">
-                                        <span className="sr-only">Quantity</span>
+                                    <td  className="px-8">
+                                        
                                     
-                                        <div className="border rounded-pill py-1 width-122 w-xl-80 px-3 border-color-1">
-                                            <div className="js-quantity row align-items-center">
-                                                <div className="col">
-                                                    <input className="js-result form-control h-auto border-0 rounded p-0 shadow-none" type="text" value="1"/>
-                                                </div>
-                                                <div className="col-auto pr-1">
-                                                    <a className="js-minus btn btn-icon btn-xs btn-outline-secondary rounded-circle border-0" href="javascript:;">
-                                                        <small className="fas fa-minus btn-icon__inner"></small>
-                                                    </a>
-                                                    <a className="js-plus btn btn-icon btn-xs btn-outline-secondary rounded-circle border-0" href="javascript:;">
-                                                        <small className="fas fa-plus btn-icon__inner"></small>
-                                                    </a>
+                                        <div className="border rounded-full py-1 w-[170px] px-3  text-[#333e48]">
+                                            <div className="justify-between items-center flex flex-row">
+                                                
+                                                    <input className=" outline-none w-full"  type="number" />
+                                                
+                                                <div className="flex flex-row space-x-1">
+                                                    <div className="rounded-full hover:bg-[#333e48] hover:text-white p-2 cursor-pointer" >
+                                                        <Bi.BiMinus size={16}/>
+                                                    </div>
+                                                    <div className="rounded-full hover:bg-[#333e48] hover:text-white p-2 cursor-pointer" >
+                                                        <Bi.BiPlus size={16}/>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                       
                                     </td>
 
-                                    <td data-title="Total">
+                                    <td  className="px-8">
                                         <span className="">$1,100.00</span>
                                     </td>
                                 </tr>
-                                <tr className="">
-                                    <td className="text-center">
-                                        <a href="#" className="text-gray-32 font-size-26">×</a>
+                                {/* end of table row for itesm in cart */}
+                                <tr className="space-x-4 text-black/80  text-lg " style={{paddingTop: "10px"}}>
+                                    <td className="text-right px-8 text-3xl mt-4">
+                                        <a href="#" className=" text-[#333e48]/60 hover:text-black font-size-26">×</a>
                                     </td>
-                                    <td className="d-none d-md-table-cell">
-                                        <a href="#"><img className="img-fluid max-width-100 p-1 border border-color-1" src="../../assets/img/300X300/img7.png" alt="Image Description"/></a>
-                                    </td>
-
-                                    <td data-title="Product">
-                                        <a href="#" className="text-gray-90">Widescreen NX Mini F1 SMART NX</a>
-                                    </td>
-
-                                    <td data-title="Price">
-                                        <span className="">$685.00</span>
+                                    <td className="px-8 mt-4">
+                                        <div className='w-[100px]  border-2 border-black/20'>
+                                            <a href="#" >
+                                                <img className="" src="https://transvelo.github.io/electro-html/2.0/assets/img/300X300/img6.jpg" alt="Image Description"/></a>
+                                        </div>
                                     </td>
 
-                                    <td data-title="Quantity">
-                                        <span className="sr-only">Quantity</span>
+                                    <td data-title="Product" className="px-8">
+                                        <a href="#" className="text-black/80 font-medium text-lg">Ultra Wireless S50 Headphones S50 with Bluetooth</a>
+                                    </td>
+
+                                    <td data-title="Price" className="px-8  text-[#333e48]">
+                                        <span className="">$1,100.00</span>
+                                    </td>
+
+                                    <td  className="px-8">
+                                        
                                     
-                                        <div className="border rounded-pill py-1 width-122 w-xl-80 px-3 border-color-1">
-                                            <div className="js-quantity row align-items-center">
-                                                <div className="col">
-                                                    <input className="js-result form-control h-auto border-0 rounded p-0 shadow-none" type="text" value="1"/>
-                                                </div>
-                                                <div className="col-auto pr-1">
-                                                    <a className="js-minus btn btn-icon btn-xs btn-outline-secondary rounded-circle border-0" href="javascript:;">
-                                                        <small className="fas fa-minus btn-icon__inner"></small>
-                                                    </a>
-                                                    <a className="js-plus btn btn-icon btn-xs btn-outline-secondary rounded-circle border-0" href="javascript:;">
-                                                        <small className="fas fa-plus btn-icon__inner"></small>
-                                                    </a>
+                                        <div className="border rounded-full py-1 w-[170px] px-3  text-[#333e48]">
+                                            <div className="justify-between items-center flex flex-row">
+                                                
+                                                    <input className=" outline-none w-full"  type="number" />
+                                                
+                                                <div className="flex flex-row space-x-1">
+                                                    <div className="rounded-full hover:bg-[#333e48] hover:text-white p-2 cursor-pointer" >
+                                                        <Bi.BiMinus size={16}/>
+                                                    </div>
+                                                    <div className="rounded-full hover:bg-[#333e48] hover:text-white p-2 cursor-pointer" >
+                                                        <Bi.BiPlus size={16}/>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    
+                                      
                                     </td>
 
-                                    <td data-title="Total">
-                                        <span className="">$685.00</span>
+                                    <td  className="px-8">
+                                        <span className="">$1,100.00</span>
                                     </td>
                                 </tr>
+                                {/* end of table row for itesm in cart */}
+                                
                                 <tr>
                                     <td  className="border-top space-top-2 justify-content-center">
                                         <div className="pt-md-3">
