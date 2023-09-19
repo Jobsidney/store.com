@@ -47,15 +47,12 @@ function Footer({}: Props) {
                                 </a>
                             </div>
                             <div className="mb-4">
-                                <div className="row no-gutters">
-
                                         <i className="ec ec-support text-primary font-size-56"></i>
 
                                     <div className="col pl-3">
                                         <div className=" font-light">Got questions? Call us 24/7!</div>
                                         <a href="tel:+80080018588" className="text-2xl text-gray-700">(800) 8001-8588, </a>
                                     </div>
-                                </div>
                             </div>
                             <div className="mb-4">
                                 <h6 className="mb-1 font-bold text-xl">Contact info</h6>
@@ -94,13 +91,13 @@ function Footer({}: Props) {
                                     <h6 className="mb-3 font-bold text-lg">Find it Fast</h6>
                               
                                     <ul className="space-y-2">
-                                        <li><a className="text-gray-600 hover:text-black" href="../shop/product-categories-5-column-sidebar.html">Laptops &amp; Computers</a></li>
-                                        <li><a className="text-gray-600 hover:text-black" href="../shop/product-categories-5-column-sidebar.html">Cameras &amp; Photography</a></li>
-                                        <li><a className="text-gray-600 hover:text-black" href="../shop/product-categories-5-column-sidebar.html">Smart Phones &amp; Tablets</a></li>
-                                        <li><a className="text-gray-600 hover:text-black" href="../shop/product-categories-5-column-sidebar.html">Video Games &amp; Consoles</a></li>
-                                        <li><a className="text-gray-600 hover:text-black" href="../shop/product-categories-5-column-sidebar.html">TV &amp; Audio</a></li>
-                                        <li><a className="text-gray-600 hover:text-black" href="../shop/product-categories-5-column-sidebar.html">Gadgets</a></li>
-                                        <li><a className="text-gray-600 hover:text-black" href="../shop/product-categories-5-column-sidebar.html">Car Electronic &amp; GPS</a></li>
+                                        <li><a className="text-gray-600 hover:text-black" href=".#">Laptops &amp; Computers</a></li>
+                                        <li><a className="text-gray-600 hover:text-black" href=".#">Cameras &amp; Photography</a></li>
+                                        <li><a className="text-gray-600 hover:text-black" href=".#">Smart Phones &amp; Tablets</a></li>
+                                        <li><a className="text-gray-600 hover:text-black" href=".#">Video Games &amp; Consoles</a></li>
+                                        <li><a className="text-gray-600 hover:text-black" href=".#">TV &amp; Audio</a></li>
+                                        <li><a className="text-gray-600 hover:text-black" href=".#">Gadgets</a></li>
+                                        <li><a className="text-gray-600 hover:text-black" href=".#">Car Electronic &amp; GPS</a></li>
                                     </ul>
                                 
                                 </div>
@@ -108,11 +105,11 @@ function Footer({}: Props) {
                                 <div className="pt-4">
                               
                                     <ul className="space-y-2 mt-md-6">
-                                        <li><a className="text-gray-600 hover:text-black" href="../shop/product-categories-5-column-sidebar.html">Printers &amp; Ink</a></li>
-                                        <li><a className="text-gray-600 hover:text-black" href="../shop/product-categories-5-column-sidebar.html">Software</a></li>
-                                        <li><a className="text-gray-600 hover:text-black" href="../shop/product-categories-5-column-sidebar.html">Office Supplies</a></li>
-                                        <li><a className="text-gray-600 hover:text-black" href="../shop/product-categories-5-column-sidebar.html">Computer Components</a></li>
-                                        <li><a className="text-gray-600 hover:text-black" href="../shop/product-categories-5-column-sidebar.html">Accesories</a></li>
+                                        <li><a className="text-gray-600 hover:text-black" href=".#">Printers &amp; Ink</a></li>
+                                        <li><a className="text-gray-600 hover:text-black" href=".#">Software</a></li>
+                                        <li><a className="text-gray-600 hover:text-black" href=".#">Office Supplies</a></li>
+                                        <li><a className="text-gray-600 hover:text-black" href=".#">Computer Components</a></li>
+                                        <li><a className="text-gray-600 hover:text-black" href=".#">Accesories</a></li>
                                     </ul>
                                    
                                 </div>
@@ -121,21 +118,20 @@ function Footer({}: Props) {
                                     <h6 className="mb-3 font-bold text-lg">Customer Care</h6>
                                    
                                     <ul className="space-y-2">
-                                        <li><a className="text-gray-600 hover:text-black" href="../shop/my-account.html">My Account</a></li>
-                                        <li><a className="text-gray-600 hover:text-black" href="../shop/track-your-order.html">Order Tracking</a></li>
-                                        <li><a className="text-gray-600 hover:text-black" href="../shop/wishlist.html">Wish List</a></li>
-                                        <li><a className="text-gray-600 hover:text-black" href="../home/terms-and-conditions.html">Customer Service</a></li>
-                                        <li><a className="text-gray-600 hover:text-black" href="../home/terms-and-conditions.html">Returns / Exchange</a></li>
-                                        <li><a className="text-gray-600 hover:text-black" href="../home/faq.html">FAQs</a></li>
-                                        <li><a className="text-gray-600 hover:text-black" href="../home/terms-and-conditions.html">Product Support</a></li>
+                                        <li><a className="text-gray-600 hover:text-black" href=".">My Account</a></li>
+                                        <li><a className="text-gray-600 hover:text-black" href=".">Order Tracking</a></li>
+                                        <li><a className="text-gray-600 hover:text-black" href=".">Wish List</a></li>
+                                        <li><a className="text-gray-600 hover:text-black" href=".">Customer Service</a></li>
+                                        <li><a className="text-gray-600 hover:text-black" href=".">Returns / Exchange</a></li>
+                                        <li><a className="text-gray-600 hover:text-black" href=".">FAQs</a></li>
+                                        <li><a className="text-gray-600 hover:text-black" href=".">Product Support</a></li>
                                     </ul>
                                    
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                
+    
             </div>
             <div className="px-[12%] py-2 bg-black/20 justify-between flex flex-row items-center">
                         <div className="mb-3 mb-md-0">© <a href="#" className="font-weight-bold text-gray-90">Shop.com</a> - All rights Reserved</div>
