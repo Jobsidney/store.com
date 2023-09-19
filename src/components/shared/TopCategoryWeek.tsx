@@ -15,10 +15,10 @@ function TopCategoryWeek({}: Props) {
                             <div className="bg-white  flex flex-row items-center">
                               
                                 <div className="">
-                                    <img className="w-full transform-rotate-15 w-[200px]" src="https://transvelo.github.io/electro-html/2.0/assets/img/100X100/img4.png" alt="Image Description"/>
+                                    <img className="w-full transform-rotate-15 w-[250px] -rotate-12" src="https://transvelo.github.io/electro-html/2.0/assets/img/100X100/img4.png" alt="Image Description"/>
                                 </div>
                                 <div className="ml-3 media-body">
-                                    <h6 className="mb-0 text-gray-90 text-lg">Home &amp; Audio Enternteinment</h6>
+                                    <h6 className="mb-0 text-gray-600 text-lg">Home &amp; Audio Enternteinment</h6>
                                 </div>
                             </div>
                         </div>
@@ -26,10 +26,10 @@ function TopCategoryWeek({}: Props) {
                             <div className="bg-white  flex flex-row items-center">
                               
                                 <div className="">
-                                    <img className="w-full transform-rotate-15 w-[200px]" src="https://transvelo.github.io/electro-html/2.0/assets/img/100X100/img10.png" alt="Image Description"/>
+                                    <img className="w-full transform-rotate-15 w-[250px] -rotate-12" src="https://transvelo.github.io/electro-html/2.0/assets/img/100X100/img10.png" alt="Image Description"/>
                                 </div>
                                 <div className="ml-3 media-body">
-                                    <h6 className="mb-0 text-gray-90 text-lg">Home &amp; Audio Enternteinment</h6>
+                                    <h6 className="mb-0 text-gray-600 text-lg">Home &amp; Audio Enternteinment</h6>
                                 </div>
                             </div>
                         </div>
@@ -37,10 +37,10 @@ function TopCategoryWeek({}: Props) {
                             <div className="bg-white  flex flex-row items-center">
                               
                                 <div className="">
-                                    <img className="w-full transform-rotate-15 w-[200px]" src="https://transvelo.github.io/electro-html/2.0/assets/img/100X100/img4.png" alt="Image Description"/>
+                                    <img className="w-full transform-rotate-15 w-[250px] -rotate-12" src="https://transvelo.github.io/electro-html/2.0/assets/img/100X100/img4.png" alt="Image Description"/>
                                 </div>
                                 <div className="ml-3 media-body">
-                                    <h6 className="mb-0 text-gray-90 text-lg">Home &amp; Audio Enternteinment</h6>
+                                    <h6 className="mb-0 text-gray-600 text-lg">Home &amp; Audio Enternteinment</h6>
                                 </div>
                             </div>
                         </div>
@@ -48,10 +48,10 @@ function TopCategoryWeek({}: Props) {
                             <div className="bg-white  flex flex-row items-center">
                               
                                 <div className="">
-                                    <img className="w-full transform-rotate-15 w-[200px]" src="https://transvelo.github.io/electro-html/2.0/assets/img/100X100/img4.png" alt="Image Description"/>
+                                    <img className="w-full transform-rotate-15 w-[250px] -rotate-12" src="https://transvelo.github.io/electro-html/2.0/assets/img/100X100/img7.png" alt="Image Description"/>
                                 </div>
                                 <div className="ml-3 media-body">
-                                    <h6 className="mb-0 text-gray-90 text-lg">Home &amp; Audio Enternteinment</h6>
+                                    <h6 className="mb-0 text-gray-600 text-lg">Home &amp; Audio Enternteinment</h6>
                                 </div>
                             </div>
                         </div>
@@ -59,10 +59,10 @@ function TopCategoryWeek({}: Props) {
                             <div className="bg-white  flex flex-row items-center">
                               
                                 <div className="">
-                                    <img className="w-full transform-rotate-15 w-[200px]" src="https://transvelo.github.io/electro-html/2.0/assets/img/100X100/img4.png" alt="Image Description"/>
+                                    <img className="w-full transform-rotate-15 w-[250px] -rotate-12" src="https://transvelo.github.io/electro-html/2.0/assets/img/100X100/img4.png" alt="Image Description"/>
                                 </div>
                                 <div className="ml-3 media-body">
-                                    <h6 className="mb-0 text-gray-90 text-lg">Home &amp; Audio Enternteinment</h6>
+                                    <h6 className="mb-0 text-gray-600 text-lg">Home &amp; Audio Enternteinment</h6>
                                 </div>
                             </div>
                         </div>
@@ -70,10 +70,10 @@ function TopCategoryWeek({}: Props) {
                             <div className="bg-white  flex flex-row items-center">
                               
                                 <div className="">
-                                    <img className="w-full transform-rotate-15 w-[200px]" src="https://transvelo.github.io/electro-html/2.0/assets/img/100X100/img4.png" alt="Image Description"/>
+                                    <img className="w-full transform-rotate-15 w-[250px] -rotate-12" src="https://transvelo.github.io/electro-html/2.0/assets/img/100X100/img4.png" alt="Image Description"/>
                                 </div>
                                 <div className="ml-3 media-body">
-                                    <h6 className="mb-0 text-gray-90 text-lg">Home &amp; Audio Enternteinment</h6>
+                                    <h6 className="mb-0 text-gray-600 text-lg">Home &amp; Audio Enternteinment</h6>
                                 </div>
                             </div>
                         </div>
@@ -81,10 +81,10 @@ function TopCategoryWeek({}: Props) {
                             <div className="bg-white  flex flex-row items-center">
                               
                                 <div className="">
-                                    <img className="w-full transform-rotate-15 w-[200px]" src="https://transvelo.github.io/electro-html/2.0/assets/img/100X100/img4.png" alt="Image Description"/>
+                                    <img className="w-full transform-rotate-15 w-[250px] -rotate-12" src="https://transvelo.github.io/electro-html/2.0/assets/img/100X100/img4.png" alt="Image Description"/>
                                 </div>
                                 <div className="ml-3 media-body">
-                                    <h6 className="mb-0 text-gray-90 text-lg">Home &amp; Audio Enternteinment</h6>
+                                    <h6 className="mb-0 text-gray-600 text-lg">Home &amp; Audio Enternteinment</h6>
                                 </div>
                             </div>
                         </div>
@@ -92,10 +92,10 @@ function TopCategoryWeek({}: Props) {
                             <div className="bg-white  flex flex-row items-center">
                               
                                 <div className="">
-                                    <img className="w-full transform-rotate-15 w-[200px]" src="https://transvelo.github.io/electro-html/2.0/assets/img/100X100/img4.png" alt="Image Description"/>
+                                    <img className="w-full transform-rotate-15 w-[250px] -rotate-12" src="https://transvelo.github.io/electro-html/2.0/assets/img/100X100/img4.png" alt="Image Description"/>
                                 </div>
                                 <div className="ml-3 media-body">
-                                    <h6 className="mb-0 text-gray-90 text-lg">Home &amp; Audio Enternteinment</h6>
+                                    <h6 className="mb-0 text-gray-600 text-lg">Home &amp; Audio Enternteinment</h6>
                                 </div>
                             </div>
                         </div>
@@ -103,10 +103,10 @@ function TopCategoryWeek({}: Props) {
                             <div className="bg-white  flex flex-row items-center">
                               
                                 <div className="">
-                                    <img className="w-full transform-rotate-15 w-[200px]" src="https://transvelo.github.io/electro-html/2.0/assets/img/100X100/img4.png" alt="Image Description"/>
+                                    <img className="w-full transform-rotate-15 w-[250px] -rotate-12" src="https://transvelo.github.io/electro-html/2.0/assets/img/100X100/img4.png" alt="Image Description"/>
                                 </div>
                                 <div className="ml-3 media-body">
-                                    <h6 className="mb-0 text-gray-90 text-lg">Home &amp; Audio Enternteinment</h6>
+                                    <h6 className="mb-0 text-gray-600 text-lg">Home &amp; Audio Enternteinment</h6>
                                 </div>
                             </div>
                         </div>
@@ -114,10 +114,10 @@ function TopCategoryWeek({}: Props) {
                             <div className="bg-white  flex flex-row items-center">
                               
                                 <div className="">
-                                    <img className="w-full transform-rotate-15 w-[200px]" src="https://transvelo.github.io/electro-html/2.0/assets/img/100X100/img4.png" alt="Image Description"/>
+                                    <img className="w-full transform-rotate-15 w-[250px] -rotate-12" src="https://transvelo.github.io/electro-html/2.0/assets/img/100X100/img4.png" alt="Image Description"/>
                                 </div>
                                 <div className="ml-3 media-body">
-                                    <h6 className="mb-0 text-gray-90 text-lg">Home &amp; Audio Enternteinment</h6>
+                                    <h6 className="mb-0 text-gray-600 text-lg">Home &amp; Audio Enternteinment</h6>
                                 </div>
                             </div>
                         </div>
