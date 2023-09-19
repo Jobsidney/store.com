@@ -1,10 +1,12 @@
 import React from 'react'
 import * as Md from 'react-icons/md'
+import * as Bs from 'react-icons/bs'
 type Props = {}
 
 const ProductCard = (props: Props) => {
   return (
-    <div className="w-full border-r  border-black/10 hover:border-transparent  hover:shadow-2xl lg:px-4 p-3">
+    <div className='group'>
+    <div className="w-full border-r  border-black/10 hover:border-transparent  hover:shadow-2xl lg:px-4 p-3 group-hover:divide-y-2 group-hover:z-50 ">
         <div className=" ">
             <div className="mb-2">
                 <a href="../shop/product-categories-7-column-full-width.html" className="text-[15px] text-gray-600 font-thin">Speakers</a>
@@ -28,13 +30,13 @@ const ProductCard = (props: Props) => {
                 </div>
             </div>
         </div>
-        <div className="product-item__footer">
-            <div className="border-t pt-2 flex-center-between flex-wrap">
-                <a href="../shop/compare.html" className="text-gray-6 font-size-13"><i className="ec ec-compare mr-1 font-size-15"></i> Compare</a>
-                <a href="../shop/wishlist.html" className="text-gray-6 font-size-13"><i className="ec ec-favorites mr-1 font-size-15"></i> Wishlist</a>
+        <div className="">
+            <div className="hidden group-hover:block pt-2 flex-wrap">
+               
+                <a href="" className="text-gray-400 font-size-13 flex fex-row space-x-2 items-center hover:text-black "><Bs.BsHeart size={20} /> <span>Wishlist</span> </a>
             </div>
         </div>
-    </div>
+    </div></div>
   )
 }
 
