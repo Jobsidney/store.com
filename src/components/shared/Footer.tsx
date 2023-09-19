@@ -35,7 +35,7 @@ function Footer({}: Props) {
 
 
 
-            <div className="pt-8 pb-4 bg-gray-13">
+            <div className="pt-8 pb-4 bg-gray-50">
                 <div className="container mt-1">
                     <div className="row">
                         <div className="col-lg-5">
