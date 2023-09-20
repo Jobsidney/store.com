@@ -25,7 +25,7 @@ function Footer({}: Props) {
                         
                             <form className='w-[50%]'>
                                 <div className="flex flex-row justify-end">
-                                    <input type="email" className="rounded-l-full px-6 form-control border-0 h-12 w-[70%]" name="email" id="subscribeSrEmail" placeholder="Email address" aria-label="Email address" aria-describedby="subscribeButton" required data-msg="Please enter a valid email address."/>
+                                    <input type="email" className="rounded-l-full outline-none px-6 form-control border-0 h-12 w-[70%]" name="email" id="subscribeSrEmail" placeholder="Email address" aria-label="Email address" aria-describedby="subscribeButton" required data-msg="Please enter a valid email address."/>
                                     <div className="input-group-append">
                                         <button type="submit" className="bg-[#333e48] outline-0 outline h-12 py-2 px-10 rounded-r-full text-white font-bold hover:shadow-lg" id="subscribeButton">Sign Up</button>
                                     </div>
