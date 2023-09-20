@@ -52,7 +52,7 @@ function ViewCart({}: Props) {
                                         <div className="border rounded-full py-1 w-[170px] px-3  text-[#333e48]">
                                             <div className="justify-between items-center flex flex-row">
                                                 
-                                                    <input className=" outline-none w-full"  type="number" />
+                                                    <input className=" outline-none w-full"  type="number" value={2}/>
                                                 
                                                 <div className="flex flex-row space-x-1">
                                                     <div className="rounded-full hover:bg-[#333e48] hover:text-white p-2 cursor-pointer" >
@@ -97,7 +97,7 @@ function ViewCart({}: Props) {
                                         <div className="border rounded-full py-1 w-[170px] px-3  text-[#333e48]">
                                             <div className="justify-between items-center flex flex-row">
                                                 
-                                                    <input className=" outline-none w-full"  type="number" />
+                                                    <input className=" outline-none w-full"  type="number" value={1} />
                                                 
                                                 <div className="flex flex-row space-x-1">
                                                     <div className="rounded-full hover:bg-[#333e48] hover:text-white p-2 cursor-pointer" >
