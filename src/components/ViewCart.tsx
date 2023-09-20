@@ -1,16 +1,17 @@
 import React from 'react'
 import * as Bi from 'react-icons/bi'
+import TitleHalfBorder from './shared/TitleHalfBorder'
 type Props = {}
 
 function ViewCart({}: Props) {
   return (
-    <div className="px-[15%] py-24 text-[#333e48]">
+    <div className="px-[18%] py-24 text-[#333e48]">
                 <div className="text-center text-5xl mb-12 ">
                     <h1 className="text-center">Cart</h1>
                 </div>
                 <div className="mb-10 cart-table">
                     <form className="mb-4" action="#" method="post">
-                        <table className="text-[#747474]" >
+                        <table className="text-[#747474] " >
                             <thead className='border-b   text-[#747474]/80'>
                                 <tr className='font-extralight my-3'>
                                     <th className="product-remove">&nbsp;</th>
@@ -23,25 +24,25 @@ function ViewCart({}: Props) {
                             </thead>
                             <tbody className='border-spacing-4 '>
                                 <tr className="space-x-4 text-black/80  text-lg " style={{paddingTop: "10px"}}>
-                                    <td className="text-right px-8 text-3xl mt-4">
-                                        <a href="#" className=" text-[#333e48]/60 hover:text-black font-size-26">×</a>
+                                    <td className="text-right px-4 w-[20px] text-3xl mt-4 ">
+                                        <a href="#" className=" text-[#333e48]/60  hover:text-black font-size-26">×</a>
                                     </td>
-                                    <td className="px-8 mt-4">
+                                    <td className="px-2 mt-4">
                                         <div className='w-[100px]  border-2 border-black/20'>
                                             <a href="#" >
                                                 <img className="" src="https://transvelo.github.io/electro-html/2.0/assets/img/300X300/img6.jpg" alt="Image Description"/></a>
                                         </div>
                                     </td>
 
-                                    <td data-title="Product" className="px-8">
+                                    <td data-title="Product" className="px-14">
                                         <a href="#" className="text-black/80 font-medium text-lg">Ultra Wireless S50 Headphones S50 with Bluetooth</a>
                                     </td>
 
-                                    <td data-title="Price" className="px-8  text-[#333e48]">
+                                    <td data-title="Price" className="px-14  text-[#333e48]">
                                         <span className="">$1,100.00</span>
                                     </td>
 
-                                    <td  className="px-8">
+                                    <td  className="px-14">
                                         
                                     
                                         <div className="border rounded-full py-1 w-[170px] px-3  text-[#333e48]">
@@ -62,31 +63,31 @@ function ViewCart({}: Props) {
                                       
                                     </td>
 
-                                    <td  className="px-8">
+                                    <td  className="px-14">
                                         <span className="">$1,100.00</span>
                                     </td>
                                 </tr>
                                 {/* end of table row for itesm in cart */}
                                 <tr className="space-x-4 text-black/80  text-lg " style={{paddingTop: "10px"}}>
-                                    <td className="text-right px-8 text-3xl mt-4">
-                                        <a href="#" className=" text-[#333e48]/60 hover:text-black font-size-26">×</a>
+                                    <td className="text-right px-4 w-[20px] text-3xl mt-4 ">
+                                        <a href="#" className=" text-[#333e48]/60  hover:text-black font-size-26">×</a>
                                     </td>
-                                    <td className="px-8 mt-4">
+                                    <td className="px-2 mt-4">
                                         <div className='w-[100px]  border-2 border-black/20'>
                                             <a href="#" >
                                                 <img className="" src="https://transvelo.github.io/electro-html/2.0/assets/img/300X300/img6.jpg" alt="Image Description"/></a>
                                         </div>
                                     </td>
 
-                                    <td data-title="Product" className="px-8">
+                                    <td data-title="Product" className="px-14">
                                         <a href="#" className="text-black/80 font-medium text-lg">Ultra Wireless S50 Headphones S50 with Bluetooth</a>
                                     </td>
 
-                                    <td data-title="Price" className="px-8  text-[#333e48]">
+                                    <td data-title="Price" className="px-14  text-[#333e48]">
                                         <span className="">$1,100.00</span>
                                     </td>
 
-                                    <td  className="px-8">
+                                    <td  className="px-14">
                                         
                                     
                                         <div className="border rounded-full py-1 w-[170px] px-3  text-[#333e48]">
@@ -107,46 +108,39 @@ function ViewCart({}: Props) {
                                       
                                     </td>
 
-                                    <td  className="px-8">
+                                    <td  className="px-14">
                                         <span className="">$1,100.00</span>
                                     </td>
                                 </tr>
                                 {/* end of table row for itesm in cart */}
                                 
-                                <tr>
-                                    <td  className="border-top space-top-2 justify-content-center">
-                                        <div className="pt-md-3">
-                                            <div className="d-block d-md-flex flex-center-between">
-                                                <div className="mb-3 mb-md-0 w-xl-40">
-                                                 
-                                                    
-                                                        <label className="sr-only" >Coupon code</label>
-                                                        <div className="input-group">
-                                                            <input type="text" className="form-control" name="text" id="subscribeSrEmailExample1" placeholder="Coupon code" aria-label="Coupon code" aria-describedby="subscribeButtonExample2" required/>
-                                                            <div className="input-group-append">
-                                                                <button className="btn btn-block btn-dark px-4" type="button" id="subscribeButtonExample2"><i className="fas fa-tags d-md-none"></i><span className="d-none d-md-inline">Apply coupon</span></button>
-                                                            </div>
+                            </tbody>
+                        </table>
+                        <div className="mt-10">
+                                            <div className="flex flex-row items-center justify-between">
+                                             
+                                                        <div className="flex flex-row ">
+                                                            <input type="text" className="border outline-none  rounded-l-full px-4 lg:min-w-[350px]" name="text" placeholder="Coupon code" />
+                                                            
+                                                                <button className="bg-[#333e48]  text-center  md:px-4 rounded-r-full py-3 font-bold min-w-[200px]  px-8 text-white" type="button" >
+                                                                     Apply coupon</button>
+                                                            
                                                         </div>
-                                                    
-                                           
-                                                </div>
-                                                <div className="d-md-flex">
-                                                    <button type="button" className="btn btn-soft-secondary mb-3 mb-md-0 font-weight-normal px-5 px-md-4 px-lg-5 w-100 w-md-auto">Update cart</button>
-                                                    <a href="../shop/checkout.html" className="btn btn-primary-dark-w ml-md-2 px-5 px-md-4 px-lg-5 w-100 w-md-auto d-none d-md-inline-block">Proceed to checkout</a>
+                                                <div className="flex flex-row space-x-3">
+                                                    <button type="button" className=" bg-[#77838f]/10 hover:bg-[#77838f] hover:text-white rounded-full text-base mb-3 font-normal px-8 w-[150px] py-3 ">Update cart</button>
+                                                    <a href="../shop/checkout.html" className="hover:bg-[#333e48] bg-[#fed700] text-black text-center  md:px-4 rounded-full py-3 font-bold min-w-[200px] mb-3  px-8 hover:text-white">Proceed to checkout</a>
                                                 </div>
                                             </div>
                                         </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
                     
-                </form></div>
+                </form>
+                </div>
                 <div className="mb-8 cart-total">
-                    <div className="row">
+                    <div className="flex flex-row justify-end">
                         <div className="col-xl-5 col-lg-6 offset-lg-6 offset-xl-7 col-md-8 offset-md-4">
-                            <div className="border-bottom border-color-1 mb-3">
-                                <h3 className="d-inline-block section-title mb-0 pb-2 font-size-26">Cart totals</h3>
+                            <div className="border-b mb-3">
+                                <h3 className=" mb-0 pb-2 font-size-26">Cart totals</h3>
+                                <TitleHalfBorder title='Cart Totals'/>
                             </div>
                             <table className="table mb-3 mb-md-0">
                                 <tbody>
