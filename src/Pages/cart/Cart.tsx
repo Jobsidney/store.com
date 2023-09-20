@@ -1,17 +1,16 @@
-import React, { Component } from 'react'
+import React from 'react'
+import ViewCart from '../../components/ViewCart'
+import TopCategoryWeek from '../../components/shared/TopCategoryWeek'
 
 type Props = {}
 
-type State = {}
-
-class Cart extends Component<Props, State> {
-  state = {}
-
-  render() {
-    return (
-      <div>Cart</div>
-    )
-  }
+function Cart({}: Props) {
+  return (
+    <>
+      <ViewCart/>
+      <TopCategoryWeek/>
+    </>
+  )
 }
 
 export default Cart
