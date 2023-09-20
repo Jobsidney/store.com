@@ -8,7 +8,7 @@ function TopCategoryWeek({}: Props) {
     <div className=" bg-gray-50 px-[12%] py-16">
                 <div className="container">
                 <div className="flex-row flex justify-between border-b-2  border-[#dedfe0] ">
-                       <TitleHalfBorder title={""}/>
+                       <TitleHalfBorder title="Top Categories this Week"/>
                     </div>
                     <div className="grid grid-cols-5  justify-items-between gap-y-6  py-8">
                     <div className="  bg-white hover:border-transparent  w-[270px] h-[120px] min-w-[270px]  hover:shadow-2xl lg:px-4 p-3">
