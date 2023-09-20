@@ -137,26 +137,25 @@ function ViewCart({}: Props) {
                 </div>
                 <div className="mb-8 cart-total">
                     <div className="flex flex-row justify-end">
-                        <div className="col-xl-5 col-lg-6 offset-lg-6 offset-xl-7 col-md-8 offset-md-4">
+                        <div className="w-[40%] space-y-6">
                             <div className="border-b mb-3">
-                                <h3 className=" mb-0 pb-2 font-size-26">Cart totals</h3>
                                 <TitleHalfBorder title='Cart Totals'/>
                             </div>
-                            <table className="table mb-3 mb-md-0">
-                                <tbody>
-                                    <tr className="cart-subtotal">
-                                        <th>Subtotal</th>
-                                        <td data-title="Subtotal"><span className="amount">$1,785.00</span></td>
-                                    </tr>
-                                    <tr className="shipping">
-                                        <th>Shipping</th>
-                                        <td data-title="Shipping">
+                            
+                               <div className='divide-y space-y-6'>
+                               <div className="flex flex-row justify-between items-center pt-4">
+                                        <div className='font-semibold text-lg'>Subtotal</div>
+                                        <div data-title="Subtotal"><span className="amount">$1,785.00</span></div>
+                                    </div>
+                                    <div className="flex flex-row justify-between items-center pt-4">
+                                        <div className='font-semibold text-lg'>Shipping</div>
+                                        <div data-title="Shipping">
                                             Flat Rate: <span className="amount">$300.00</span>
-                                            <div className="mt-1">
+                                            {/* <div className="mt-1">
                                                 <a className="font-size-12 text-gray-90 text-decoration-on underline-on-hover font-weight-bold mb-3 d-inline-block" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                                                     Calculate Shipping
                                                 </a>
-                                                {/* <div className="collapse mb-3" id="collapseExample">
+                                                <div className="collapse mb-3" id="collapseExample">
                                                     <div className="form-group mb-4">
                                                         <div className="dropdown bootstrap-select js-select dropdown-select right-dropdown-0-all w-100"><select className="js-select selectpicker dropdown-select right-dropdown-0-all w-100" data-style="bg-white font-weight-normal border border-color-1 text-gray-20" tabindex="-98">
                                                             <option value="">Select a country…</option>
@@ -449,17 +448,18 @@ function ViewCart({}: Props) {
                                                     </div>
                                                     <input className="form-control mb-4" type="text" placeholder="Postcode / ZIP">
                                                     <button type="button" className="btn btn-soft-secondary mb-3 mb-md-0 font-weight-normal px-5 px-md-4 px-lg-5 w-100 w-md-auto">Update Totals</button>
-                                                </div> */}
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr className="order-total">
-                                        <th>Total</th>
-                                        <td data-title="Total"><strong><span className="amount">$2,085.00</span></strong></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <button type="button" className="btn btn-primary-dark-w ml-md-2 px-5 px-md-4 px-lg-5 w-100 w-md-auto d-md-none">Proceed to checkout</button>
+                                                </div>
+                                            </div> */}
+                                        </div>
+                                    </div>
+                                    <div className="flex flex-row justify-between items-center pt-4">
+                                    <div className='font-semibold text-lg'>Total</div>
+                                        <div data-title="Total"><strong><span className="amount">$2,085.00</span></strong></div>
+                                    </div>
+                               </div>
+                            
+                            
+                            {/* <a href="../shop/checkout.html" className="hover:bg-[#333e48] bg-[#fed700] text-black text-center  md:px-4 rounded-full py-3 font-bold min-w-[200px] mb-3  px-8 hover:text-white">Proceed to checkout</a> */}
                         </div>
                     </div>
                 </div>
