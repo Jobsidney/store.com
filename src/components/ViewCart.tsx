@@ -13,16 +13,20 @@ function ViewCart({}: Props) {
                     <form className="mb-4" action="#" method="post">
                         <table className="text-[#747474] " >
                             <thead className='border-b   text-[#747474]/80'>
-                                <tr className='font-extralight my-3'>
+                                <tr className='font-thin my-3'>
                                     <th className="product-remove">&nbsp;</th>
                                     <th className="product-thumbnail">&nbsp;</th>
-                                    <th className="product-name">Product</th>
-                                    <th className="product-price">Price</th>
-                                    <th className="product-quantity w-lg-15">Quantity</th>
-                                    <th className="product-subtotal">Total</th>
+                                    <th className="font-thin">Product</th>
+                                    <th className="font-thin">Price</th>
+                                    <th className="font-thin">Quantity</th>
+                                    <th className="font-thin">Total</th>
+
                                 </tr>
+                                <div className='mt-4'></div>
                             </thead>
+                            
                             <tbody className='border-spacing-4 '>
+                                <div className='mt-10'></div>
                                 <tr className="space-x-4 text-black/80  text-lg " style={{paddingTop: "10px"}}>
                                     <td className="text-right px-4 w-[20px] text-3xl mt-4 ">
                                         <a href="#" className=" text-[#333e48]/60  hover:text-black font-size-26">×</a>
@@ -116,7 +120,7 @@ function ViewCart({}: Props) {
                                 
                             </tbody>
                         </table>
-                        <div className="mt-10">
+                        <div className=" border-t mt-6 pt-12">
                                             <div className="flex flex-row items-center justify-between">
                                              
                                                         <div className="flex flex-row ">
