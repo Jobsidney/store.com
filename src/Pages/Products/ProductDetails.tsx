@@ -137,8 +137,8 @@ function ProductDetails({}: Props) {
                                     <div className="">
                                         <h6 className="font-size-14 mb-2">Quantity</h6>
                            
-                                       <div className="flex flex-row space-x-4">
-                                        <div className="border rounded-full py-1 w-[170px] px-3  text-[#333e48]">
+                                       <div className="flex flex-row space-x-6">
+                                        <div className="border rounded-full py-2 w-[170px] px-3  text-[#333e48]">
                                                 <div className="justify-between items-center flex flex-row">
                                                                 
                                                         <input className=" outline-none w-full"  type="number" value={1} />
@@ -154,7 +154,7 @@ function ProductDetails({}: Props) {
                                                 </div>
                                             </div>
                                         <div className="">
-                                                <div className="bg-[#fed700] hover:bg-[#333e48] cursor-pointer min-w-[150px] flex-row space-x-2 flex justify-center items-center py-2 px-10 transition translate-y-1 hover:scale-110 rounded-3xl text-white font-semibold">
+                                                <div className="bg-[#fed700] hover:bg-[#333e48] cursor-pointer min-w-[150px] flex-row space-x-2 flex justify-center items-center py-3 px-10 transition translate-y-1 hover:scale-110 rounded-3xl text-white font-semibold">
                                                     <div>
                                                         <Md.MdOutlineAddShoppingCart size={24} color='white'/>
                                                     </div>
