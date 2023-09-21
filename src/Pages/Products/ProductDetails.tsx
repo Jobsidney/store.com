@@ -1,5 +1,7 @@
 import React from 'react'
 import * as Bs from 'react-icons/bs'
+import * as Bi from 'react-icons/bi'
+import * as Md from 'react-icons/md'
 
 type Props = {}
 
@@ -102,9 +104,11 @@ function ProductDetails({}: Props) {
                                         <li>20 MP Electro and 28 megapixel CMOS rear camera</li>
                                     </ul>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
 
-                                <p className='my-10'><span className='font-bold text-gray-700 '>SKU</span>:   FW511948218</p>
+                                    <p className='my-10'><span className='font-bold text-gray-700 '>SKU</span>:   FW511948218</p>
+                                </div>
 
                                 <div className="mb-4">
                                     <div className="flex flex-row items-baseline ">
@@ -112,49 +116,57 @@ function ProductDetails({}: Props) {
                                         <del className="text-xl ml-2 font-medium text-gray-500">$2,299.00</del>
                                     </div>
                                 </div>
-                                <div className="border-top border-bottom py-3 mb-4">
-                                    <div className="d-flex align-items-center">
+                                <div className="border-y py-4 mb-4">
+                                    <div className="flex flex-row items-center">
                                         <h6 className="font-size-14 mb-0">Color</h6>
                                         
-                                        <div className="dropdown bootstrap-select js-select dropdown-select ml-3"><select className="js-select selectpicker dropdown-select ml-3" data-style="btn-sm bg-white font-weight-normal py-2 border" >
-                                            <option value="one" selected>White with Gold</option>
-                                            <option value="two">Red</option>
-                                            <option value="three">Green</option>
-                                            <option value="four">Blue</option>
-                                        </select><button type="button" className="btn dropdown-toggle btn-sm bg-white font-weight-normal py-2 border" data-toggle="dropdown" role="button" title="Green" aria-expanded="false">
-                                            <div className="filter-option"><div className="filter-option-inner"><div className="filter-option-inner-inner">Green</div></div> </div></button>
-                                            <div className="dropdown-menu" role="combobox" ><div className="inner show" role="listbox" aria-expanded="false" >
-                                                <ul className="dropdown-menu inner show"><li className="selected active"><a role="option" className="dropdown-item selected active" aria-disabled="false" aria-selected="true">
-                                                    <span className=" bs-ok-default check-mark"></span><span className="text">White with Gold</span></a></li><li><a role="option" className="dropdown-item" aria-disabled="false"  aria-selected="false"><span className=" bs-ok-default check-mark"></span><span className="text">Red</span></a></li><li className="selected active"><a role="option" className="dropdown-item selected active" aria-disabled="false"  aria-selected="true"><span className=" bs-ok-default check-mark"></span>
-                                                    <span className="text">Green</span></a></li><li><a role="option" className="dropdown-item" aria-disabled="false"  aria-selected="false"><span className=" bs-ok-default check-mark"></span><span className="text">Blue</span></a></li></ul></div></div></div>
+                                        <div className="dropdown bootstrap-select js-select dropdown-select mx-3">
+                                            <select className=" bg-white pr-2 hover:bg-[#77838f] border  hover:text-white rounded-full text-base mb-3 font-normal px-8 min-w-[150px] py-3 outline-none" data-style=" bg-white font-weight-normal py-2 border px-1" >
+                                            <option value="one" className='bg-white text-gray-600 ' selected>White with Gold</option>
+                                            <option value="one" className='bg-white text-gray-600' selected>White with Red</option>
+                                            <option value="one" className='bg-white text-gray-600' selected>White with Blue</option>
+                                            <option value="one" className='bg-white text-gray-600' selected>White with Pink</option>
+                                            
+                                        </select>
+                                        
+                                           </div>
                                        
                                     </div>
                                 </div>
-                                <div className="d-md-flex align-items-end mb-3">
-                                    <div className="max-width-150 mb-4 mb-md-0">
-                                        <h6 className="font-size-14">Quantity</h6>
+                                
+                                    <div className="">
+                                        <h6 className="font-size-14 mb-2">Quantity</h6>
                            
-                                        <div className="border rounded-pill py-2 px-3 border-color-1">
-                                            <div className="js-quantity row align-items-center">
-                                                <div className="col">
-                                                    <input className="js-result form-control h-auto border-0 rounded p-0 shadow-none" type="text" value="1"/>
-                                                </div>
-                                                <div className="col-auto pr-1">
-                                                    <a className="js-minus btn btn-icon btn-xs btn-outline-secondary rounded-circle border-0" href="javascript:;">
-                                                        <small className="fas fa-minus btn-icon__inner"></small>
-                                                    </a>
-                                                    <a className="js-plus btn btn-icon btn-xs btn-outline-secondary rounded-circle border-0" href="javascript:;">
-                                                        <small className="fas fa-plus btn-icon__inner"></small>
-                                                    </a>
+                                       <div className="flex flex-row space-x-4">
+                                        <div className="border rounded-full py-1 w-[170px] px-3  text-[#333e48]">
+                                                <div className="justify-between items-center flex flex-row">
+                                                                
+                                                        <input className=" outline-none w-full"  type="number" value={1} />
+                                                                
+                                                    <div className="flex flex-row space-x-1">
+                                                        <div className="rounded-full hover:bg-[#333e48] hover:text-white p-2 cursor-pointer" >
+                                                            <Bi.BiMinus size={16}/>
+                                                        </div>
+                                                        <div className="rounded-full hover:bg-[#333e48] hover:text-white p-2 cursor-pointer" >
+                                                            <Bi.BiPlus size={16}/>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
+                                        <div className="">
+                                                <div className="bg-[#fed700] hover:bg-[#333e48] cursor-pointer min-w-[150px] flex-row space-x-2 flex justify-center items-center py-2 px-10 transition translate-y-1 hover:scale-110 rounded-3xl text-white font-semibold">
+                                                    <div>
+                                                        <Md.MdOutlineAddShoppingCart size={24} color='white'/>
+                                                    </div>
+                                                    <div>
+                                                            <i className=""></i> Add to Cart</div>
+                                                </div>
                                         </div>
-                                     
-                                    </div>
-                                    <div className="ml-md-3">
-                                        <a href="#" className="btn px-5 btn-primary-dark transition-3d-hover"><i className="ec ec-add-to-cart mr-2 font-size-20"></i> Add to Cart</a>
                                     </div>
                                 </div>
+                                            
+                                            
+                                            
                             </div>
                         </div>
                     </div>
