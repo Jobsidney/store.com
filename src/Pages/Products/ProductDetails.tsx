@@ -138,7 +138,7 @@ function ProductDetails({}: Props) {
                                         <h6 className="font-size-14 mb-2">Quantity</h6>
                            
                                        <div className="flex flex-row space-x-6">
-                                        <div className="border rounded-full py-2 w-[170px] px-3  text-[#333e48]">
+                                        <div className="border rounded-full py-2 w-[170px] px-4  text-[#333e48]">
                                                 <div className="justify-between items-center flex flex-row">
                                                                 
                                                         <input className=" outline-none w-full"  type="number" value={1} />
