@@ -3,23 +3,24 @@ import { AvatarBadge, Badge, Box, Button, Flex, Link, Skeleton, SkeletonCircle, 
 import ProductCard from '../shared/ProductCard'
 import Description from './Description'
 import Specifications from './Specifications'
+import Reviews from './Reviews'
 type Props = {}
 
 function ProductDetailsTab({}: Props) {
     const data = [{
+          label: 'Reviews',
+          content:<Reviews/>,
+        },
+        {
           label: 'Specification',
           content:<Specifications/>,
         },
         {
           label: 'Description',
           content: <Description/>,
-        },
+        }
         
-        {
-          label: 'Reviews',
-          content:
-            'Perhaps the surest dish ever invented but fills the stomach more than Reviews',
-        },
+        
       ]
   return (
     <div className='lg:my-24'>
