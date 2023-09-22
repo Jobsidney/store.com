@@ -2,19 +2,19 @@ import React from 'react'
 import { AvatarBadge, Badge, Box, Button, Flex, Link, Skeleton, SkeletonCircle, SkeletonText, Tab, TabList, TabPanel, TabPanels, Tabs } from '@chakra-ui/react'
 import ProductCard from '../shared/ProductCard'
 import Description from './Description'
+import Specifications from './Specifications'
 type Props = {}
 
 function ProductDetailsTab({}: Props) {
-    const data = [
+    const data = [{
+          label: 'Specification',
+          content:<Specifications/>,
+        },
         {
           label: 'Description',
           content: <Description/>,
         },
-        {
-          label: 'Specification',
-          content:
-            'Perhaps the surest dish ever invented but fills the stomach more than Specifications',
-        },
+        
         {
           label: 'Reviews',
           content:
