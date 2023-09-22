@@ -2,11 +2,13 @@ import React from 'react'
 import * as Bs from 'react-icons/bs'
 import * as Bi from 'react-icons/bi'
 import * as Md from 'react-icons/md'
+import ProductDetailsTab from '../../components/ProductDetails/ProductDetailsTab'
 
 type Props = {}
 
 function ProductDetails({}: Props) {
   return (
+
     <div className="px-[12%] py-16">
                     <div className="grid grid-cols-[40%,60%] gap-12 ">
                         <div className="flex flex-col ">
@@ -67,7 +69,7 @@ function ProductDetails({}: Props) {
 
                             
                         </div>
-                        <div className="col-md-7 mb-md-6 mb-lg-0">
+                        <div className="">
                             <div className="mb-2 text-gray-500">
                                 <div className="border-b mb-3  pb-3 space-y-5">
                                     <a href="#" className="text-[15px] text-gray-500 font-thin">Headphones</a>
@@ -92,7 +94,7 @@ function ProductDetails({}: Props) {
                                     </div>
                                 </div>
                                 {/* whish list */}
-                                <div className="flex-horizontal-center flex-wrap mb-4">
+                                <div className=" mb-4">
                                     <a href="" className="text-gray-400 font-size-13 flex fex-row space-x-2 items-center hover:text-black "><Bs.BsHeart size={20} /> <span>Wishlist</span> </a>
                                    
                                 </div>
@@ -120,7 +122,7 @@ function ProductDetails({}: Props) {
                                     <div className="flex flex-row items-center">
                                         <h6 className="font-size-14 mb-0">Color</h6>
                                         
-                                        <div className="dropdown bootstrap-select js-select dropdown-select mx-3">
+                                        <div className=" mx-3">
                                             <select className=" bg-white pr-2 hover:bg-[#77838f] border  hover:text-white rounded-full text-base mb-3 font-normal px-8 min-w-[150px] py-3 outline-none" data-style=" bg-white font-weight-normal py-2 border px-1" >
                                             <option value="one" className='bg-white text-gray-600 ' selected>White with Gold</option>
                                             <option value="one" className='bg-white text-gray-600' selected>White with Red</option>
@@ -170,7 +172,8 @@ function ProductDetails({}: Props) {
                             </div>
                         </div>
                     </div>
-                </div>
+                    <ProductDetailsTab/>
+    </div>
   )
 }
 
