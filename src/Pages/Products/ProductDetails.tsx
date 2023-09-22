@@ -3,11 +3,13 @@ import * as Bs from 'react-icons/bs'
 import * as Bi from 'react-icons/bi'
 import * as Md from 'react-icons/md'
 import ProductDetailsTab from '../../components/ProductDetails/ProductDetailsTab'
+import TopCategoryWeek from '../../components/shared/TopCategoryWeek'
 
 type Props = {}
 
 function ProductDetails({}: Props) {
   return (
+    <>
 
     <div className="px-[12%] py-16">
                     <div className="grid grid-cols-[40%,60%] gap-12 ">
@@ -165,15 +167,15 @@ function ProductDetails({}: Props) {
                                                 </div>
                                         </div>
                                     </div>
-                                </div>
-                                            
-                                            
-                                            
+                                </div>               
                             </div>
                         </div>
                     </div>
                     <ProductDetailsTab/>
+                    
     </div>
+    <TopCategoryWeek/>
+    </>
   )
 }
 
