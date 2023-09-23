@@ -58,7 +58,7 @@ const FeaturedSales = () => {
                             <div className=" p-4 pt-4 pt-md-5 lg:pt-6 xl:pt-5 lg:pb-4 xl:px-14 lg:px-6">
                                 <div className="flex-row flex items-center overflow-auto overflow-md-visble">
                                     <p className=" text-3xl font-thin mb-0 flex flex-wrap ">SHOP AND <strong className='font-extrabold text-black mx-1'> SAVE BIG </strong> ON HOTTEST TABLETS</p>
-                                    <div className="flex-content-center ml-4 flex-shrink-0">
+                                    <div className=" ml-4 flex-shrink-0">
                                         <div className=" rounded-lg px-16 py-2 bg-[#fed700] space-y-1">
                                             <em className="text-[14px] font-light">STARTING AT</em>
                                             <div className="text-4xl font-bold text-black">
