@@ -175,6 +175,7 @@ function ProductDetails({}: Props) {
                     
     </div>
     <TopCategoryWeek/>
+    
     </>
   )
 }
