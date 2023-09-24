@@ -181,7 +181,7 @@ function Reviews({}: Props) {
                                     {/* end */}
                                     {/* start */}
                                     <div className="py-6 mb-4 space-y-4">
-                                        <div className="d-flex justify-content-between align-items-center text-secondary font-size-1 mb-2">
+                                        <div className="d-flex  align-items-center text-secondary font-size-1 mb-2">
                                         <div className="flex flex-row items-center text-[16px] space-x-1">
                                                     <Bs.BsStarFill color='#fed700'/>
                                                     <Bs.BsStarFill color='#fed700'/>
