@@ -207,7 +207,7 @@ function Checkout({}: Props) {
                         </div>
                        
                       
-                                <div className="bg-[#f1f1f1] rounded-lg">
+                                <div className="bg-[#f1f1f1] h-fit rounded-lg">
                               
                                     <div className="p-6 py-8 mb-4 checkout-table">
                                       
@@ -250,11 +250,11 @@ function Checkout({}: Props) {
                                           
                                         </div>
                                         
-                                        <div className=" border-t-4  border-black/20 my-6">
+                                        <div className=" border-t-4  border-black/20 my-6 pt-8">
 
                                         <RadioGroup onChange={setValue} value={value}>
                                             <Stack direction='column'>
-                                                    <Accordion allowToggle className='divide-y space-y-6'>
+                                                    <Accordion allowToggle className='divide-y space-y-4'>
                                                         <AccordionItem>
                                                             <h2>
                                                            
@@ -308,16 +308,18 @@ function Checkout({}: Props) {
                                         </RadioGroup>
                                            
                                         </div>
-                                        <div className="form-group d-flex align-items-center justify-content-between px-3 mb-5">
-                                            <div className="form-check">
-                                                <input className="form-check-input" type="checkbox" value="" id="defaultCheck10"  data-msg="Please agree terms and conditions." />
-                                                <label className="form-check-label form-label" >
-                                                    I have read and agree to the website <a href="#" className="text-blue">terms and conditions </a>
+                                        <div className="flex flex-row items-start space-x-2 px-3 mb-5">
+                                           
+                                                <Checkbox  className='border border-black/30' value={'checked'}></Checkbox>
+                                                <label className="font-semibold" >
+                                                    I have read and agree to the website <a href="#" className="text-blue-600">terms and conditions </a>
                                                     <span className="text-danger">*</span>
                                                 </label>
-                                            </div>
+                                           
                                         </div>
-                                        <button type="submit" className="btn btn-primary-dark-w btn-block btn-pill font-size-20 mb-3 py-3">Place order</button>
+                                        <div className="pt-6">
+                                                    < button type="button"className="hover:bg-[#333e48] bg-[#fed700] text-black text-center text-xl  md:px-4 rounded-full py-5 font-bold w-full mb-3  px-8 hover:text-white">Place Order
+                                                </button></div>
                                     </div>
                                 
                                 </div>
