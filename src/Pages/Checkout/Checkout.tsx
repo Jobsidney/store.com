@@ -241,7 +241,7 @@ function Checkout({}: Props) {
                                                 </div>
                                                 <div className="flex flex-row justify-between items-center pt-4">
                                                 <div className='font-semibold text-lg'>Shipping</div>
-                                                    <div>Flat rate $300.00</div>
+                                                    <div>Flat rate <br /> $300.00</div>
                                                 </div>
                                                 <div className="flex flex-row justify-between items-center pt-4">
                                                 <div className='font-semibold text-lg'>Total</div>
