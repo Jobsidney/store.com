@@ -1,10 +1,12 @@
 import React from 'react'
 import Alert from '../../components/shared/Alert'
 import TitleHalfBorder from '../../components/shared/TitleHalfBorder'
+import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Checkbox, Radio, RadioGroup, Stack } from '@chakra-ui/react'
 
 type Props = {}
 
 function Checkout({}: Props) {
+    const [value, setValue] = React.useState('1')
   return (
    
         <div className="px-[18%] py-24 text-[#333e48]">
@@ -187,9 +189,9 @@ function Checkout({}: Props) {
                                 </div>
                              
                                 <div className="border-bottom border-color-1 mb-5">
-                                <div className="border-b mb-5 text-3xl font-thin">Added Infomation
-                                    <TitleHalfBorder title=''/> 
-                                </div>
+                                    <div className="border-b mb-5 text-3xl font-thin">Added Infomation
+                                        <TitleHalfBorder title=''/> 
+                                    </div>
                                    
                                 </div>
                                 <div className="flex flex-col w-full space-y-2">
@@ -204,106 +206,106 @@ function Checkout({}: Props) {
                                 
                         </div>
                        
-                        <div className="col-lg-5 order-lg-2 mb-7 mb-lg-0">
-                            <div className="pl-lg-3 ">
-                                <div className="bg-gray-1 rounded-lg">
+                      
+                                <div className="bg-[#f1f1f1] rounded-lg">
                               
-                                    <div className="p-4 mb-4 checkout-table">
+                                    <div className="p-6 py-8 mb-4 checkout-table">
                                       
-                                        <div className="border-bottom border-color-1 mb-5">
-                                            <h3 className="section-title mb-0 pb-2 font-size-25">Your order</h3>
-                                        </div>
+                                        <div className="border-b mb-5 text-3xl font-thin">Your Order
+                                            <TitleHalfBorder title=''/>  
+                                            </div>
                                         
 
                                        
-                                        <table className="table">
-                                            <thead>
-                                                <tr>
-                                                    <th className="product-name">Product</th>
-                                                    <th className="product-total">Total</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr className="cart_item">
-                                                    <td>Ultra Wireless S50 Headphones S50 with Bluetooth&nbsp;<strong className="product-quantity">× 1</strong></td>
-                                                    <td>$1,100.00</td>
-                                                </tr>
-                                                <tr className="cart_item">
-                                                    <td>Widescreen NX Mini F1 SMART NX&nbsp;<strong className="product-quantity">× 1</strong></td>
-                                                    <td>$685.00</td>
-                                                </tr>
-                                            </tbody>
-                                            <tfoot>
-                                                <tr>
-                                                    <th>Subtotal</th>
-                                                    <td>$1,785.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Shipping</th>
-                                                    <td>Flat rate $300.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Total</th>
-                                                    <td><strong>$2,085.00</strong></td>
-                                                </tr>
-                                            </tfoot>
-                                        </table>
-                                        
-                                        <div className="border-top border-width-3 border-color-1 pt-3 mb-3">
+                                        <div className='divide-y divide-black/20 space-y-6'>
+                                           
+                                                <div className="flex flex-row justify-between items-center pt-4">
+                                                    <div className='font-semibold text-lg'>Product</div>
+                                                    <div className='font-semibold text-lg'>Total</div>
+                                                </div>
                                             
-                                            <div id="basicsAccordion1">
-                                              
-                                                <div className="border-bottom border-color-1 border-dotted-bottom">
-                                                    <div className="p-3" id="basicsHeadingOne">
-                                                        <div className="custom-control custom-radio">
-                                                            <input type="radio" className="custom-control-input" id="stylishRadio1" name="stylishRadio" />
-                                                            <label className="custom-control-label form-label"  data-toggle="collapse" data-target="#basicsCollapseOnee" aria-expanded="true" aria-controls="basicsCollapseOnee">
-                                                                Direct bank transfer
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div id="basicsCollapseOnee" className="collapse show border-top border-color-1 border-dotted-top bg-dark-lighter" aria-labelledby="basicsHeadingOne" data-parent="#basicsAccordion1">
-                                                        <div className="p-4">
+                                           
+                                            <div className="flex flex-row justify-between items-center space-x-8 pt-4">
+                                                    <div>Ultra Wireless S50 Headphones S50 with Bluetooth&nbsp;<strong className="product-quantity">× 1</strong></div>
+                                                    <div>$1,100.00</div>
+                                                </div>
+                                                
+                                            <div className="flex flex-row justify-between items-center space-x-8 pt-4">
+                                                    <div>Widescreen NX Mini F1 SMART NX&nbsp;<strong className="product-quantity">× 1</strong></div>
+                                                    <div>$685.00</div>
+                                                </div>
+                                           
+                                                <div className="flex flex-row justify-between items-center pt-4">
+                                                <div className='font-semibold text-lg'>Subtotal</div>
+                                                    <div>$1,785.00</div>
+                                                </div>
+                                                <div className="flex flex-row justify-between items-center pt-4">
+                                                <div className='font-semibold text-lg'>Shipping</div>
+                                                    <div>Flat rate $300.00</div>
+                                                </div>
+                                                <div className="flex flex-row justify-between items-center pt-4">
+                                                <div className='font-semibold text-lg'>Total</div>
+                                                    <div><strong>$2,085.00</strong></div>
+                                                </div>
+                                          
+                                        </div>
+                                        
+                                        <div className=" border-t-4  border-black/20 my-6">
+
+                                        <RadioGroup onChange={setValue} value={value}>
+                                            <Stack direction='column'>
+                                                    <Accordion allowToggle className='divide-y space-y-6'>
+                                                        <AccordionItem>
+                                                            <h2>
+                                                           
+                                                            <AccordionButton className='flex flex-row justify-between font-bold'>
+                                                                <Radio color={'gray.200'} colorScheme='yellow' value='1' > Direct bank transfer </Radio>  
+                                                                                                                
+                                                           <AccordionIcon/> 
+                                                            </AccordionButton>
+                                                            </h2>
+                                                            <AccordionPanel className='bg-black/10 text-md text-black/70 ' p={8} >
                                                             Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
+                                                        
+                                                            </AccordionPanel>
+                                                        </AccordionItem>
 
-                                                <div className="border-bottom border-color-1 border-dotted-bottom">
-                                                    <div className="p-3" id="basicsHeadingTwo">
-                                                        <div className="custom-control custom-radio">
-                                                            <input type="radio" className="custom-control-input" id="secondStylishRadio1" name="stylishRadio"/>
-                                                            <label className="custom-control-label form-label"  data-toggle="collapse" data-target="#basicsCollapseTwo" aria-expanded="false" aria-controls="basicsCollapseTwo">
-                                                                Check payments
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div id="basicsCollapseTwo" className="collapse border-top border-color-1 border-dotted-top bg-dark-lighter" aria-labelledby="basicsHeadingTwo" data-parent="#basicsAccordion1">
-                                                        <div className="p-4">
+                                                        <AccordionItem>
+                                                            <h2>
+                                                           
+                                                            <AccordionButton className='flex flex-row justify-between font-bold'> <Radio color={'gray.200'} colorScheme='yellow' value='2'>Check payments</Radio>                                                      
+                                                           <AccordionIcon/> 
+                                                            </AccordionButton>
+                                                            </h2>
+                                                            <AccordionPanel className='bg-black/10 text-md text-black/70'  p={8}>
                                                             Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-
-                                                <div className="border-bottom border-color-1 border-dotted-bottom">
-                                                    <div className="p-3" id="basicsHeadingFour">
-                                                        <div className="custom-control custom-radio">
-                                                            <input type="radio" className="custom-control-input" id="FourstylishRadio1" name="stylishRadio"/>
-                                                            <label className="custom-control-label form-label"  data-toggle="collapse" data-target="#basicsCollapseFour" aria-expanded="false" aria-controls="basicsCollapseFour">
-                                                                PayPal <a href="#" className="text-blue">What is PayPal?</a>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div id="basicsCollapseFour" className="collapse border-top border-color-1 border-dotted-top bg-dark-lighter" aria-labelledby="basicsHeadingFour" data-parent="#basicsAccordion1">
-                                                        <div className="p-4">
+                                                            </AccordionPanel>
+                                                        </AccordionItem>
+                                                        <AccordionItem>
+                                                            <h2>
+                                                           
+                                                            <AccordionButton className='flex flex-row justify-between font-bold'><Radio color={'gray.200'} colorScheme='yellow'  value='3'> PayPal</Radio>                                                       
+                                                           <AccordionIcon/> 
+                                                            </AccordionButton>
+                                                            </h2>
+                                                            <AccordionPanel className='bg-black/10 text-md text-black/70'  p={8}>
                                                             Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
+                                                            </AccordionPanel>
+                                                        </AccordionItem>
+                                                        <AccordionItem>
+                                                            <h2>
+                                                           
+                                                            <AccordionButton className='flex flex-row justify-between font-bold'><Radio color={'gray.200'} colorScheme='yellow' value='4'> M-Pesa</Radio>                                                       
+                                                           <AccordionIcon/> 
+                                                            </AccordionButton>
+                                                            </h2>
+                                                            <AccordionPanel className='bg-black/10 text-md text-black/70'  p={8}>
+                                                            Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.
+                                                            </AccordionPanel>
+                                                        </AccordionItem>
+                                                        </Accordion>   
+                                            </Stack>
+                                        </RadioGroup>
                                            
                                         </div>
                                         <div className="form-group d-flex align-items-center justify-content-between px-3 mb-5">
@@ -319,8 +321,8 @@ function Checkout({}: Props) {
                                     </div>
                                 
                                 </div>
-                            </div>
-                        </div>
+                            
+                     
 
                         
                     </div>
