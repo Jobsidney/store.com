@@ -1,8 +1,8 @@
-import { AvatarBadge, Badge, Button, ButtonGroup, Drawer, DrawerBody, DrawerContent, DrawerHeader, DrawerOverlay, Input, Link, Radio, RadioGroup, Stack, useDisclosure } from '@chakra-ui/react'
+import { AvatarBadge, Badge, Button, ButtonGroup, CloseButton, Drawer, DrawerBody, DrawerContent, DrawerHeader, DrawerOverlay, Input, Link, Radio, RadioGroup, Stack, useDisclosure } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import * as Lu from 'react-icons/lu'
 import * as Li from 'react-icons/lia'
-
+import * as Ci from 'react-icons/ci'
 type Props = {}
 
 function NavBar({}: Props) {
@@ -62,14 +62,49 @@ function NavBar({}: Props) {
 
               {/* side nav bar start here */}
               
-            <Drawer placement='left'   onClose={onClose} isOpen={isOpen}>
+            {/* <Drawer placement='left'   onClose={onClose} isOpen={isOpen}>
                 
                 <DrawerContent className='shadow-r shadow-md bg-red-900 '>
-                    <DrawerHeader borderBottomWidth='1px'>Basic Drawer</DrawerHeader>
+                    <DrawerHeader borderBottomWidth='1px'>
+                        <div className='flex flex-row justify-between'>
+                            <div className='font-bold text-3xl'>Shop.com</div>
+                            <CloseButton className="text-black/30 hover:bg-transparent hover:text-black/70" onClick={onClose} size={'lg'} />
+                        </div>
+                    </DrawerHeader>
                     <DrawerBody>
                         <p>Some contents...</p>
                         <p>Some contents...</p>
                         <p>Some contents...</p>
+                    </DrawerBody>
+                </DrawerContent>
+            </Drawer> */}
+
+            <Drawer placement='right' size={'sm'}  onClose={onClose} isOpen={isOpen}>
+                
+                <DrawerContent className='shadow-r shadow-md bg-red-900 '>
+                    <DrawerHeader borderBottomWidth='1px'>
+                        <div className='flex flex-row justify-between'>
+                            <div className='font-bold text-3xl'>Shop.com</div>
+                            <CloseButton className="text-black/30 hover:bg-transparent hover:text-black/70" onClick={onClose} size={'lg'} />
+                        </div>
+                    </DrawerHeader>
+                    <DrawerBody>
+                        <form >
+                            <div className="flex border flex-row items-center  w-full rounded-full ">
+                                <label className="font-bold flex flex-row items-center justify-center capitalize w-[15%] ">
+                                    <Ci.CiUser size={24}/>
+                                
+                                </label>
+                                <input type="email" className="border-l py-3 px-3 border-y-none border-r-none outline-none w-full rounded-r-full " name="email" placeholder="email" />
+                            </div>
+                            <div className="flex border flex-row items-center  w-full rounded-full ">
+                                <label className="font-bold flex flex-row items-center justify-center capitalize w-[15%] ">
+                                    <Ci.CiLock size={24}/>
+                                
+                                </label>
+                                <input type="password" className="border-l py-3 px-3 border-y-none border-r-none outline-none w-full rounded-r-full " name="Password" placeholder="Password" />
+                            </div>
+                        </form>
                     </DrawerBody>
                 </DrawerContent>
             </Drawer>
