@@ -13,6 +13,7 @@ function Checkout({}: Props) {
         <div className="text-center text-5xl mb-12 ">
                     <h1 className="text-center">Checkout</h1>
                 </div>
+                <Alert/>
 
                 <form className="js-validate" >
                     <div className="grid grid-cols-[60%,40%] gap-3">
