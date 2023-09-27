@@ -8,9 +8,13 @@ import LoginSIgnUp from '../credentials/LoginSIgnUp'
 type Props = {}
 
 function NavBar({}: Props) {
-    const { isOpen, onOpen, onClose } = useDisclosure()
+    const { isOpen, onOpen, onClose } = useDisclosure();
+
     const [placement, setPlacement] =useState('right');
-    const [signIn,setSignIN]=useState(false)
+    const [signIn,setSignIN]=useState(false);
+    const [navLeft,setNavLeft]=useState(true);
+
+
       return (
           <div>
               <nav className=' bg-[#fed700]'>
@@ -20,7 +24,7 @@ function NavBar({}: Props) {
                       {/* search area */}
   
                       <div className='flex flex-row w-[70%] space-x-4'>
-                          <button onClick={onOpen}>
+                          <button id='navLeft' onClick={onOpen}>
                               <Lu.LuMenu size={32} color='black'/>
                               
                           </button>
@@ -43,6 +47,11 @@ function NavBar({}: Props) {
                               <Li.LiaShoppingBagSolid size={26} className=" "/>
                               <div className='font-semibold'>$1785.00</div>
                           </button>
+                          <button id='register' onClick={onOpen} className='flex flex-row items-end text-black/70 space-x-1 border-l border-l-white pl-2 text-sm'>
+                              <Li.LiaUser size={24} className=" "/>
+                              <div className='font-thin'>Sign in</div>
+                          </button>
+
                       </div>
                   </div>
               </nav>
@@ -65,7 +74,7 @@ function NavBar({}: Props) {
 
               {/* side nav bar start here */}
               
-            {/* <Drawer placement='left'   onClose={onClose} isOpen={isOpen}>
+            <Drawer placement='left'   onClose={onClose} isOpen={isOpen}>
                 
                 <DrawerContent className='shadow-r shadow-md bg-red-900 '>
                     <DrawerHeader borderBottomWidth='1px'>
@@ -80,7 +89,7 @@ function NavBar({}: Props) {
                         <p>Some contents...</p>
                     </DrawerBody>
                 </DrawerContent>
-            </Drawer> */}
+            </Drawer>
 
             <Drawer placement='right' size={'sm'}  onClose={onClose} isOpen={isOpen}>
                 
