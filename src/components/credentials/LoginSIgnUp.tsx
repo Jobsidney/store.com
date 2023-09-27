@@ -49,6 +49,13 @@ function LoginSIgnUp({}: Props) {
                                         </div>
                                         <div className="flex border flex-row items-center  w-full rounded-full ">
                                             <label className="font-bold flex flex-row items-center justify-center capitalize w-[15%] ">
+                                                <Ci.CiPhone size={24}/>
+                                            
+                                            </label>
+                                            <input type="tel" className="border-l py-3 px-3 border-y-none border-r-none outline-none w-full rounded-r-full " name="phone" placeholder="+254 7000 000 00" />
+                                        </div>
+                                        <div className="flex border flex-row items-center  w-full rounded-full ">
+                                            <label className="font-bold flex flex-row items-center justify-center capitalize w-[15%] ">
                                                 <Ci.CiLock size={24}/>
                                             
                                             </label>
@@ -59,7 +66,7 @@ function LoginSIgnUp({}: Props) {
                                                 <Ci.CiLock size={24}/>
                                             
                                             </label>
-                                            <input type="password" className="border-l py-3 px-3 border-y-none border-r-none outline-none w-full rounded-r-full " name="Password" placeholder="Password" />
+                                            <input type="password" className="border-l py-3 px-3 border-y-none border-r-none outline-none w-full rounded-r-full " name="confirm Password" placeholder="Password" />
                                         </div>
                                     </>}
                             <div className="text-right mb-4 text-[#6b737a] text-sm flex flex-row justify-center">
