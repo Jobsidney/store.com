@@ -14,13 +14,13 @@ const Home = (props: Props) => {
 
   return (
     <>
-      <NavBar/>
+     
       <HeroSection/>
       <FeaturedSales />
       <WeeklyDeals/>
       <CategoryGroupedItems/>
-      <TopCategoryWeek/>
-      <Footer/>
+      
+     
     </>
     
   )
