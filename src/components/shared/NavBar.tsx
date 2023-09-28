@@ -12,7 +12,7 @@ function NavBar({}: Props) {
 
     const [placement, setPlacement] =useState('right');
     const [signIn,setSignIN]=useState(false);
-    const [navLeft,setNavLeft]=useState(true);
+    const [user,setuser]=useState(true);
 
 
       return (
@@ -24,7 +24,7 @@ function NavBar({}: Props) {
                       {/* search area */}
   
                       <div className='flex flex-row w-[70%] space-x-4'>
-                          <button id='navLeft' onClick={onOpen}>
+                          <button id='user' onClick={onOpen}>
                               <Lu.LuMenu size={32} color='black'/>
                               
                           </button>
