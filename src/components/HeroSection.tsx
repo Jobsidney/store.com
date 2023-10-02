@@ -10,9 +10,9 @@ type Props = {}
 const HeroSection = (props: Props) => {
     const [isLoaded,setLoaded] = useState<any>(true);
     return (
-        <div className='px-[12%] py-6'>
+        <div className='lg:px-[12%] px-[2%] md:px-[4%] py-6'>
           <Box   bg='white'>
-            <Flex >
+            <Flex className='flex flex-col lg:flex-row space-y-4 lg:space-y-0' >
                 <Box flex={3} pr={4}>
                     <Skeleton height='450px' isLoaded={isLoaded} bg='#f5f5f5' color='white' fadeDuration={1}>
                     <div className="flex-row flex text-black height-full md:py-7 px-[7%] bg-[url('https://transvelo.github.io/electro-html/2.0/assets/img/1920X422/img1.jpg')] bg-cover py-0 mx-0">
@@ -41,12 +41,13 @@ const HeroSection = (props: Props) => {
                     </Skeleton>
                 </Box>
                 
-                <div className="flex-1 space-y-2 flex flex-col justify-between"  >
+                <div className="flex-1 space-y-2 flex lg:flex-col flex-row justify-between space-x-3 lg:space-x-0 overflow-scroll"  >
+                    <HeroThumbNailCard isLoaded={isLoaded}/>
                     <HeroThumbNailCard isLoaded={isLoaded}/>
                     <HeroThumbNailCard isLoaded={isLoaded}/>
                     <HeroThumbNailCard isLoaded={isLoaded}/>
                 </div>
-            </Flex>
+            </Flex >
           </Box>
          
         </div>
