@@ -1,5 +1,5 @@
 import { AvatarBadge, Badge, Button, ButtonGroup, CloseButton, Drawer, DrawerBody, DrawerContent, DrawerHeader, DrawerOverlay, Input, Link, Radio, RadioGroup, Stack, useDisclosure } from '@chakra-ui/react'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import * as Lu from 'react-icons/lu'
 import * as Li from 'react-icons/lia'
 import * as Ci from 'react-icons/ci'
@@ -9,10 +9,21 @@ type Props = {}
 
 function NavBar({}: Props) {
     const { isOpen, onOpen, onClose } = useDisclosure();
-
+    const [user,setuser]=useState(false);
     const [placement, setPlacement] =useState('right');
+    const [size,setSize] = useState('')
     const [signIn,setSignIN]=useState(false);
-    const [user,setuser]=useState(true);
+
+    useEffect(()=>{
+if (user) {
+        setPlacement('right'); 
+        setSize('xs');
+
+    } else{
+        setPlacement('left');
+        setSize('sm')
+    }
+    },[])
 
 
       return (
@@ -24,10 +35,11 @@ function NavBar({}: Props) {
                       {/* search area */}
   
                       <div className='flex flex-row w-[70%] space-x-4'>
+                        {user?
                           <button id='user' onClick={onOpen}>
-                              <Lu.LuMenu size={32} color='black'/>
-                              
+                              <Lu.LuMenu size={32} color='black'/>    
                           </button>
+                          :""}
                           <div className='flex flex-row items-center bg-white w-full rounded-r-full rounded-l-full '>
                           {/*  */}
                               <input  placeholder='search for products' className='py-3 w-full rounded-l-full px-6'/>
@@ -47,11 +59,13 @@ function NavBar({}: Props) {
                               <Li.LiaShoppingBagSolid size={26} className=" "/>
                               <div className='font-semibold'>$1785.00</div>
                           </button>
+                          {user? 
+                          "":
                           <button id='register' onClick={onOpen} className='flex flex-row items-end text-black/70 space-x-1 border-l border-l-white pl-2 text-sm'>
                               <Li.LiaUser size={24} className=" "/>
                               <div className='font-thin'>Sign in</div>
                           </button>
-
+                          }
                       </div>
                   </div>
               </nav>
@@ -74,8 +88,9 @@ function NavBar({}: Props) {
 
               {/* side nav bar start here */}
               
-            <Drawer placement='left'   onClose={onClose} isOpen={isOpen}>
-                
+              
+            <Drawer placement={user?'left':'right'}   onClose={onClose} isOpen={isOpen} size={user?'xs':'sm'}>
+                {user?
                 <DrawerContent className='shadow-r shadow-md bg-red-900 '>
                     <DrawerHeader borderBottomWidth='1px'>
                         <div className='flex flex-row justify-between'>
@@ -89,10 +104,7 @@ function NavBar({}: Props) {
                         <p>Some contents...</p>
                     </DrawerBody>
                 </DrawerContent>
-            </Drawer>
-
-            <Drawer placement='right' size={'sm'}  onClose={onClose} isOpen={isOpen}>
-                
+                :
                 <DrawerContent className='shadow-r shadow-md bg-red-900 '>
                     <DrawerHeader borderBottomWidth='1px'>
                         <div className='flex flex-row justify-end'>
@@ -103,7 +115,7 @@ function NavBar({}: Props) {
                     <DrawerBody>
                        <LoginSIgnUp/>
                     </DrawerBody>
-                </DrawerContent>
+                </DrawerContent>}
             </Drawer>
           </div>
       )
