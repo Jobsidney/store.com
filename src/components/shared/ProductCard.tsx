@@ -5,7 +5,7 @@ type Props = {}
 
 const ProductCard = (props: Props) => {
   return (
-    <div className='group'>
+    <div className='group h-[400px]'>
     <div className="w-full border-r  border-black/10 hover:border-transparent  hover:shadow-2xl lg:px-4 p-3 group-hover:divide-y-2 group-hover:z-50 ">
         <div className=" ">
             <div className="mb-2">
