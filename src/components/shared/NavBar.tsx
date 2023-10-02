@@ -9,7 +9,7 @@ type Props = {}
 
 function NavBar({}: Props) {
     const { isOpen, onOpen, onClose } = useDisclosure();
-    const [user,setuser]=useState(false);
+    const [user,setuser]=useState(true);
     const [placement, setPlacement] =useState('right');
     const [size,setSize] = useState('')
     const [signIn,setSignIN]=useState(false);
@@ -29,18 +29,18 @@ if (user) {
       return (
           <div>
               <nav className=' bg-[#fed700]'>
-                  <div className="mx-[12%] flex flex-row justify-between items-center py-3 space-x-4">
-                      <div className='font-bold text-2xl'>Shop.com</div>
+                  <div className=" lg:mx-[12%] md:mx-[2%] flex flex-row justify-between items-center py-3 space-x-4">
+                      <div className='hidden lg:block font-bold text-2xl'>Shop.com</div>
   
                       {/* search area */}
   
-                      <div className='flex flex-row w-[70%] space-x-4'>
+                      <div className='flex flex-row w-[70%] md:space-x-4'>
                         {user?
                           <button id='user' onClick={onOpen}>
                               <Lu.LuMenu size={32} color='black'/>    
                           </button>
                           :""}
-                          <div className='flex flex-row items-center bg-white w-full rounded-r-full rounded-l-full '>
+                          <div className='hidden lg:flex flex-row items-center bg-white w-full rounded-r-full rounded-l-full '>
                           {/*  */}
                               <input  placeholder='search for products' className='py-3 w-full rounded-l-full px-6'/>
                               <div className='bg-[#333e48] cursor-pointer h-full flex flex-row items-center px-4 rounded-r-full'>
@@ -50,12 +50,12 @@ if (user) {
                       </div>
   
                       {/* cart and other  */}
-                      <div className='flex flex-row items-center space-x-6'>
+                      <div className='flex flex-row items-center md:space-x-6 space-x-3'>
                           <button>
                               <Li.LiaHeart size={26}/>
                           </button>
                       
-                          <button className='flex flex-row items-end space-x-5'>
+                          <button className='flex flex-row items-end space-x-2 pr-2 md:space-x-5'>
                               <Li.LiaShoppingBagSolid size={26} className=" "/>
                               <div className='font-semibold'>$1785.00</div>
                           </button>
@@ -70,7 +70,7 @@ if (user) {
                   </div>
               </nav>
   
-              <div className='flex-row flex items-center px-[12%] text-md shadow-b-500/50 shadow py-3'>
+              <div className='hidden lg:flex flex-row  items-center px-[12%] text-md shadow-b-500/50 shadow py-3'>
                   <div className='w-[20%]'>
                      <button className='font-bold'>All Departments</button> 
                   </div>
