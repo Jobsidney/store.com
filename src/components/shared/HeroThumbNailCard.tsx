@@ -9,7 +9,7 @@ type Props = {
 
 const HeroThumbNailCard = (props: Props) => {
   return (
-    <Skeleton height='140px' isLoaded={props.isLoaded} bg='#f5f5f5' color='black'  fadeDuration={1}>
+    <Skeleton height='140px' className='min-w-[350px]' isLoaded={props.isLoaded} bg='#f5f5f5' color='black'  fadeDuration={1}>
     <div className='flex flex-row justify-around items-center cursor-pointer '>
         <img src="https://transvelo.github.io/electro-html/2.0/assets/img/246X176/img1.jpg" className='w-[50%]' alt="" />
         <div className='w-[50%]'>
