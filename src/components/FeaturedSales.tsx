@@ -31,7 +31,7 @@ const FeaturedSales = () => {
                 <TabList>
                     <div className='flex flex-row justify-center w-full'>
                 {data.map((tab, index) => (
-                    <Tab key={index} _selected={{color:'black',fontWeight:'bold',borderBottom:'1px solid red'}} color={'gray.500'}><p className='text-xl'>{tab.label}</p></Tab>
+                    <Tab key={index} _selected={{color:'black',fontWeight:'bold',borderBottom:'2px solid #fed700'}} color={'gray.500'}><p className='text-xl'>{tab.label}</p></Tab>
                 ))}</div>
                 </TabList>
                 <TabPanels>
